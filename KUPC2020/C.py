@@ -1,0 +1,7 @@
+print('6')
+print("kupcoa")
+print("abdeqc")
+print("fghire")
+print("jlmnsg")
+print("vwxyti")
+print("zbxfh ")
