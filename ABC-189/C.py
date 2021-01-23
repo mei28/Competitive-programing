@@ -1,13 +1,12 @@
 N = int(input())
-A = list(map(int, input().split()))
+A = list(map(int, input().split())) + [0]
 
-table = [[0 for _ in range(N)] for _ in range(N)]
+cand = []
 
-for l in range(N):
-    for r in range(l, N):
-        table[l][r] = min(A[l:r+1])*(r-l+1)
-max_ = 0
-for l in table:
-    max_ = max(max(l), max_)
+for i in range(N):
+    while len(cand) >= 1 and A[cand[-1]] > A[i]:
+        ans = max(ans, (i-cand[-1])) * A[cand[-1]]
+        cand.pop()
+    cand.append()
 
-print(max_)
+print(ans)
