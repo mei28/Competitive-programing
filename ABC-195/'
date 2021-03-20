@@ -1,0 +1,22 @@
+
+
+n, m, q = map(int, input().split())
+item = []
+for i in range(n):
+    w, v = map(int, input().split())
+    item.append((v, w))
+
+item.sort(reverse=True)
+
+x = list(map(int, input().split()))
+
+def solve(x):
+    n = len(x)
+    x.sort()
+    used = [False] * n
+    ans = 0
+
+    for (v,w) in item
+for _ in range(q):
+    l, r = map(int, input().split())
+    solve(x[: l - 1] + x[r:])
