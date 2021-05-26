@@ -1,23 +1,23 @@
 N = int(input())
-C = [[0 for _ in range(N)] for _ in [0, 1]]
+c1, c2 = [0], [0]
+
 for i in range(N):
     c, p = map(int, input().split())
-    if c == 2:
-        C[1][i] = p
+    if c == 1:
+        c1.append(p)
+        c2.append(0)
     else:
-        C[0][i] = p
+        c1.append(0)
+        c2.append(p)
 
-sum_C_0 = [0 for _ in range(N + 1)]
-sum_C_1 = [0 for _ in range(N + 1)]
+C1, C2 = [0] * (N + 2), [0] * (N + 2)
 
-for i in range(1, N):
-    sum_C_0[i + 1] = sum_C_0[i] + C[0][i]
-    sum_C_1[i + 1] = sum_C_1[i] + C[1][i]
-
+for i in range(N + 1):
+    C1[i + 1] = C1[i] + c1[i]
+    C2[i + 1] = C2[i] + c2[i]
 
 Q = int(input())
 
 for i in range(Q):
     l, r = map(int, input().split())
-    l -= 1
-    print(sum_C_0[r] - sum_C_0[l], sum_C_1[r] - sum_C_1[l])
+    print(C1[r + 1] - C1[l], C2[r + 1] - C2[l])
