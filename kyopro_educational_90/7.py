@@ -1,33 +1,27 @@
-N = int(input())
-A = list(map(int, input().split()))
-Q = int(input())
-B = [int(input()) for _ in range(Q)]
-
-A.sort()
-
-
-def solve(b):
-    left = 0
-    right = N - 1
-    while right - left > 1:
-        mid = left + (right - left) // 2
-        diff_left = b - A[left]
-        diff_right = A[right] - b
-        if diff_right > diff_left:
-            right = mid
+def solve(p: int):
+    ok = 0
+    ng = N
+    while ng - ok > 1:
+        mid = (ng + ok) // 2
+        if A[mid] < p:
+            ok = mid
+            pass
         else:
-            left = mid
-        pass
-
-    diff_left = b - A[left]
-    diff_right = A[right] - b
-    if diff_right > diff_left:
-        return left
-    else:
-        return right
+            ng = mid
+    return ok
 
 
-ans = 0
-for b in B:
-    idx = solve(b)
-    print(abs(b - A[idx]))
+if __name__ == "__main__":
+    N = int(input())
+    A = list(map(int, input().split()))
+    A.sort()
+    Q = int(input())
+    B = [int(input()) for _ in range(Q)]
+
+    for b in B:
+        idx = solve(b)
+
+        if idx >= N - 1:
+            print(abs(b - A[idx]))
+        else:
+            print(min(abs(b - A[idx]), abs(b - A[idx + 1])))
