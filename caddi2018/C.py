@@ -25,18 +25,10 @@ if len(primes) == 0:
     print(1)
     exit()
 
-yakusuu = []
-for pr in primes:
-    if p % pr == 0:
-        while p % pr == 0:
-            p /= pr
-            yakusuu.append(pr)
-
-cnt = Counter(yakusuu)
-
+cnt = Counter(primes)
 ans = 1
 for k, v in cnt.items():
     if v >= n:
-        ans *= k * (v // n)
+        ans = (k * (v // n)) * ans
 
 print(ans)
