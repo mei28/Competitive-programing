@@ -1,0 +1,23 @@
+{
+  "input": {
+    "type": "stdin",
+    "source": "file"
+  },
+  "output": {
+    "type": "stdout",
+    "source": "file"
+  },
+  "limitations": {
+    "maxLines" : 20,
+    "maxCharacters" : 300
+  },
+  "timeout": 4000,
+  "baseDirectory": "test",
+  "//tleFactorEnabled": true,
+
+  "//": "ジャッジを自作する問題では以下のキーを // isSpecial から isSpecial に変更",
+  "// isSpecial": true,
+
+  "//": "誤差系の問題では以下のキーを// epsからepsに変更",
+  "// eps": 0.00001
+}

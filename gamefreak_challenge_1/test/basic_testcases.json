@@ -1,0 +1,200 @@
+[
+   {
+      "input": "in/basic/001-Sample-00.in",
+      "output": "out/basic/001-Sample-00.out",
+      "description": "[Step1] 計画を立てる期間が4日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 4"
+   },
+   {
+      "input": "in/basic/002-Sample-01.in",
+      "output": "out/basic/002-Sample-01.out",
+      "description": "[Step2] 計画を立てる期間が4日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 4"
+   },
+   {
+      "input": "in/basic/003-Sample-02.in",
+      "output": "out/basic/003-Sample-02.out",
+      "description": "[Step3] 計画を立てる期間が16日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 16"
+   },
+   {
+      "input": "in/basic/004-Sample-03.in",
+      "output": "out/basic/004-Sample-03.out",
+      "description": "[Step4] 計画を立てる期間が16日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 16"
+   },
+   {
+      "input": "in/basic/004-Sample-04.in",
+      "output": "out/basic/004-Sample-04.out",
+      "description": "[Step4] 計画を立てる期間が6日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 6"
+   },
+   {
+      "input": "in/basic/021-Maximum-00.in",
+      "output": "out/basic/021-Maximum-00.out",
+      "description": "[Step1] 計画を立てる期間が2000日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2000"
+   },
+   {
+      "input": "in/basic/021-Maximum-01.in",
+      "output": "out/basic/021-Maximum-01.out",
+      "description": "[Step1] 計画を立てる期間が2000日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2000"
+   },
+   {
+      "input": "in/basic/022-Maximum-00.in",
+      "output": "out/basic/022-Maximum-00.out",
+      "description": "[Step2] 計画を立てる期間が14日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 14"
+   },
+   {
+      "input": "in/basic/022-Maximum-01.in",
+      "output": "out/basic/022-Maximum-01.out",
+      "description": "[Step2] 計画を立てる期間が14日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 14"
+   },
+   {
+      "input": "in/basic/023-Maximum-00.in",
+      "output": "out/basic/023-Maximum-00.out",
+      "description": "[Step3] 計画を立てる期間が500日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 500"
+   },
+   {
+      "input": "in/basic/023-Maximum-01.in",
+      "output": "out/basic/023-Maximum-01.out",
+      "description": "[Step3] 計画を立てる期間が500日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 500"
+   },
+   {
+      "input": "in/basic/024-Maximum-00.in",
+      "output": "out/basic/024-Maximum-00.out",
+      "description": "[Step4] 計画を立てる期間が2000日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 2000"
+   },
+   {
+      "input": "in/basic/024-Maximum-01.in",
+      "output": "out/basic/024-Maximum-01.out",
+      "description": "[Step4] 計画を立てる期間が2000日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 2000"
+   },
+   {
+      "input": "in/basic/031-Random-00.in",
+      "output": "out/basic/031-Random-00.out",
+      "description": "[Step1] 計画を立てる期間が1073日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 1073"
+   },
+   {
+      "input": "in/basic/031-Random-01.in",
+      "output": "out/basic/031-Random-01.out",
+      "description": "[Step1] 計画を立てる期間が1829日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 1829"
+   },
+   {
+      "input": "in/basic/031-Random-02.in",
+      "output": "out/basic/031-Random-02.out",
+      "description": "[Step1] 計画を立てる期間が1357日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 1357"
+   },
+   {
+      "input": "in/basic/031-Random-03.in",
+      "output": "out/basic/031-Random-03.out",
+      "description": "[Step1] 計画を立てる期間が1407日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 1407"
+   },
+   {
+      "input": "in/basic/031-Random-04.in",
+      "output": "out/basic/031-Random-04.out",
+      "description": "[Step1] 計画を立てる期間が132日間である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 132"
+   },
+   {
+      "input": "in/basic/032-Random-00.in",
+      "output": "out/basic/032-Random-00.out",
+      "description": "[Step2] 計画を立てる期間が8日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 8"
+   },
+   {
+      "input": "in/basic/032-Random-01.in",
+      "output": "out/basic/032-Random-01.out",
+      "description": "[Step2] 計画を立てる期間が12日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 12"
+   },
+   {
+      "input": "in/basic/032-Random-02.in",
+      "output": "out/basic/032-Random-02.out",
+      "description": "[Step2] 計画を立てる期間が1日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 1"
+   },
+   {
+      "input": "in/basic/032-Random-03.in",
+      "output": "out/basic/032-Random-03.out",
+      "description": "[Step2] 計画を立てる期間が12日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 12"
+   },
+   {
+      "input": "in/basic/032-Random-04.in",
+      "output": "out/basic/032-Random-04.out",
+      "description": "[Step2] 計画を立てる期間が14日間である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 14"
+   },
+   {
+      "input": "in/basic/033-Random-00.in",
+      "output": "out/basic/033-Random-00.out",
+      "description": "[Step3] 計画を立てる期間が469日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 469"
+   },
+   {
+      "input": "in/basic/033-Random-01.in",
+      "output": "out/basic/033-Random-01.out",
+      "description": "[Step3] 計画を立てる期間が83日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 83"
+   },
+   {
+      "input": "in/basic/033-Random-02.in",
+      "output": "out/basic/033-Random-02.out",
+      "description": "[Step3] 計画を立てる期間が4日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 4"
+   },
+   {
+      "input": "in/basic/033-Random-03.in",
+      "output": "out/basic/033-Random-03.out",
+      "description": "[Step3] 計画を立てる期間が489日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 489"
+   },
+   {
+      "input": "in/basic/033-Random-04.in",
+      "output": "out/basic/033-Random-04.out",
+      "description": "[Step3] 計画を立てる期間が94日間である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 94"
+   },
+   {
+      "input": "in/basic/034-Random-00.in",
+      "output": "out/basic/034-Random-00.out",
+      "description": "[Step4] 計画を立てる期間が1775日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 1775"
+   },
+   {
+      "input": "in/basic/034-Random-01.in",
+      "output": "out/basic/034-Random-01.out",
+      "description": "[Step4] 計画を立てる期間が612日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 612"
+   },
+   {
+      "input": "in/basic/034-Random-02.in",
+      "output": "out/basic/034-Random-02.out",
+      "description": "[Step4] 計画を立てる期間が912日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 912"
+   },
+   {
+      "input": "in/basic/034-Random-03.in",
+      "output": "out/basic/034-Random-03.out",
+      "description": "[Step4] 計画を立てる期間が810日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 810"
+   },
+   {
+      "input": "in/basic/034-Random-04.in",
+      "output": "out/basic/034-Random-04.out",
+      "description": "[Step4] 計画を立てる期間が1452日間である場合に正答できる",
+      "description_en": "[Step4_en] Correct when N = 1452"
+   }
+]
