@@ -9,20 +9,23 @@ for i in range(n):
     B.append(b)
     AB.append([a, b])
 
-# dp[i][x][y] : x,y になるときに少なくとも何個で行けるか
+# dp[i][x][y] : i種類までにx,y になるときに少なくとも何個で行けるか
 
 INF = 1 << 60
 dp = [[[INF] * (302) for _ in range(302)] for _ in range(302)]
 dp[0][0][0] = 0
 
 for i in range(n):
-    for _x in range(x + 1):
-        for _y in range(y + 1):
-            dp[i + 1][_x][_y] = min(dp[i + 1][_x][_y], dp[i][_x][_y])
-            if _x >= AB[i][0] and _y >= AB[i][1]:
-                dp[i + 1][_x][_y] = min(
-                    dp[i + 1][_x][_y], dp[i][_x - AB[i][0]][_y - AB[i][1]] + 1
-                )
+    a, b = A[i], B[i]
+    for j in range(x + 1):
+        for k in range(y + 1):
+            jj = min(j + a, x)
+            kk = min(k + b, y)
+
+            dp[i + 1][j][k] = min(dp[i + 1][j][k], dp[i][j][k])
+
+            dp[i + 1][jj][kk] = min(dp[i + 1][jj][kk], dp[i][j][k] + 1)
+
 
 if dp[n][x][y] < INF:
     print(dp[n][x][y])
