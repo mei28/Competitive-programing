@@ -37,6 +37,8 @@ def cnt(route: list) -> int:
 
 
 if __name__ == "__main__":
+
+    input = sys.stdin.readline
     H, W = map(int, input().split())
     rs, cs = map(int, input().split())
     rt, ct = map(int, input().split())

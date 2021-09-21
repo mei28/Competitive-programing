@@ -1,7 +1,9 @@
+# S = input()
+# N = int(input())
+k, N = map(int,input().split()) 
 S = input()
-N = int(input())
 
-nex = [[0 for _ in range(100008)] for _ in range(26)]
+nex = [[0 for _ in range(100100)] for _ in range(26)]
 
 # 前処理を行う
 # dp[i][j]: 前からi文字列の右の部分文字列のうち，一番左にある文字jのインデックス

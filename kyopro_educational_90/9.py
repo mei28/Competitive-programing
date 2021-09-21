@@ -93,7 +93,10 @@ def solve_fast():
     for i in range(N):
         ret = solve(i)
         ans = max(ret, ans)
-    print(ans)
+    if int(ans) == ans:
+        print(int(ans))
+    else:
+        print(ans)
 
 
 if __name__ == "__main__":

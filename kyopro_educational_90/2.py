@@ -8,6 +8,7 @@ def check(s: str) -> bool:
     cnt = 0
     if s.count('(') != s.count(')'):
         return False
+
     for i in s:
         if i == "(":
             cnt += 1

@@ -1,3 +1,4 @@
+N = int(input())
 S = input()
 MOD = 1000000007
 
@@ -9,7 +10,7 @@ dp = [[0 for _ in range(len("atcoder") + 10)] for _ in range(len(S) + 10)]
 
 dp[0][0] = 1
 
-for i in range(len(S)):
+for i in range(N):
     for j in range(8):
         dp[i + 1][j] += dp[i][j]
         if S[i] == "a" and j == 0:
