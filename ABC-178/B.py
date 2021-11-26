@@ -10,7 +10,7 @@ if a < 0 and b < 0 and c > 0 and d > 0:
 if a < 0 and b > 0 and c < 0 and d < 0:
     print(a * c)
 if a < 0 and b > 0 and c < 0 and d > 0:
-    print(max(a*c, b*d))
+    print(max(a * c, b * d))
 if a < 0 and b > 0 and c > 0 and d > 0:
     print(b * d)
 
@@ -25,9 +25,9 @@ if a == 0:
     if c <= 0 and d <= 0:
         print(0)
     if c <= 0 and d > 0:
-        print(b*d)
+        print(b * d)
     if c > 0 and d > 0:
-        print(b*d)
+        print(b * d)
 elif b == 0:
     if c <= 0 and d <= 0:
         print(a * c)
