@@ -29,12 +29,14 @@ def check_in_data(word:str):
     return word in data
 
 def get_permutations(n:int)->list:
-    return list(permutations(alp,n))
+    _alp = list(set(alp) - set(args.exclude_word))
+    return list(permutations(_alp,n))
 
 
 def get_args():
     parser = ArgumentParser()
     parser.add_argument("--word","-w",type=str)
+    parser.add_argument("--exclude_word","-ew",type=str)
     args = parser.parse_args()
     return args
 
