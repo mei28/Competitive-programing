@@ -51,7 +51,7 @@ def check_include_word(candidate_word: str):
 
 def get_args():
     parser = ArgumentParser()
-    parser.add_argument("--word", "-w", type=str)
+    parser.add_argument("--word", "-w", type=str, required=True)
     parser.add_argument("--exclude_word", "-ew", type=str)
     parser.add_argument("--include_word", "-iw", type=str)
     args = parser.parse_args()
