@@ -1,6 +1,4 @@
 n = int(input())
-A = set( list(map(int,input().split())) )
+A = set(list(map(int, input().split())))
 
 print(len(A))
-
-
