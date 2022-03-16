@@ -1,0 +1,5 @@
+_=input()
+A=list(map(int,input().split()))
+b=sum(A)/len(A)
+A=list(map(lambda x:abs(x-b),A))
+print(A.index(min(A)))
