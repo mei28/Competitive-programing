@@ -1,6 +1,17 @@
-if __name__ == "__main__":
-    N = int(input())
-    A = list(map(int, input().split()))
-    sus_a = []
-    for i in range(1, N):
-        A[i] += A[i - 1]
+n = int(input())
+
+A = list(map(int,input().split()))
+
+S = [0]*(n+1)
+
+for  i in range(n):
+    S[i+1] = A[i]+S[i]
+
+ans = 0
+_max = -1 
+
+for i in range(n):
+    _max = max(_max,A[i])
+    ans += S[i+1]
+    print(ans+_max*(i+1))
+
