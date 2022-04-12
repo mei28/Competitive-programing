@@ -1,3 +1,3 @@
 S = input()
-S = '0' + S
+S = "0" + S
 print(S[0:4])
