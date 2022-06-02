@@ -1,14 +1,46 @@
-n, m = map(int, input().split())
+def main():
+    from collections import deque
 
-A = [[] for _ in range(m)]
-# ontop[x]: 色xのうちいちばんうえにあるボール
-ontop = [[] for _ in range(n + 1)]
+    def solve():
+        que = deque()
+        rem = N
+        cnt = [0] * N
+        for i in range(M):
+            front = T[i][-1]
+            cnt[front] += 1
+            if cnt[front] == 2:
+                que.append(front)
 
-stack = []
+        while que:
+            x = que.popleft()
+            rem -= 1
+            first, second = P[x]
+            T[first].pop()
+            T[second].pop()
+            if T[first]:
+                y = T[first][-1]
+                cnt[y] += 1
+                if cnt[y] == 2:
+                    que.append(y)
+            if T[second]:
+                y = T[second][-1]
+                cnt[y] += 1
+                if cnt[y] == 2:
+                    que.append(y)
+        return rem == 0
 
-for i in range(m):
-    k = int(input())
-    A[i] = list(map(int, input().split()))
-    ontop[A[i]][-1].append(i)
+    N, M = map(int, input().split())
+    T = []
+    P = [[] for _ in range(N)]
+    for i in range(M):
+        k = int(input())
+        a = list(x - 1 for x in map(int, input().split()))
+        for x in a:
+            P[x].append(i)
+        T.append(a[::-1])
 
-    if ontop[A[i]][-2]
+    print("Yes" if solve() else "No")
+
+
+if __name__ == "__main__":
+    main()
