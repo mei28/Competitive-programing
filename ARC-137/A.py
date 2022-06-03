@@ -1,19 +1,14 @@
-l,r = map(int,input().split())
+l, r = map(int, input().split())
 
-w = r-l
 
-def gcd(a,b)->int:
-    if b==0:
+def gcd(a, b):
+    if b == 0:
         return a
-    else:
-        return gcd(b,a%b)
+    return gcd(b, a % b)
 
-while w>0:
-    for x in range(l,r-w+1):
-        y = x+w
-        if gcd(x,y)==1:
-            print(w)
+
+for i in reversed(range(r - l + 1)):
+    for j in range(l, r - i + 1):
+        if gcd(i, j) == 1:
+            print(i)
             exit()
-            
-
-
