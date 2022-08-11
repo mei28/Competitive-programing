@@ -1,0 +1,224 @@
+[
+   {
+      "input": "in/basic/1_0_sample_00.in",
+      "output": "out/basic/1_0_sample_00.out",
+      "description": "[Step1] グリッドのサイズが2×10である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/2_0_sample_00.in",
+      "output": "out/basic/2_0_sample_00.out",
+      "description": "[Step2] グリッドのサイズが3×4である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 3"
+   },
+   {
+      "input": "in/basic/2_0_sample_01.in",
+      "output": "out/basic/2_0_sample_01.out",
+      "description": "[Step2] グリッドのサイズが4×2である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 4"
+   },
+   {
+      "input": "in/basic/2_0_sample_02.in",
+      "output": "out/basic/2_0_sample_02.out",
+      "description": "[Step2] グリッドのサイズが4×4である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 4"
+   },
+   {
+      "input": "in/basic/3_0_sample_00.in",
+      "output": "out/basic/3_0_sample_00.out",
+      "description": "[Step3] グリッドのサイズが3×5である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 3"
+   },
+   {
+      "input": "in/basic/3_0_sample_01.in",
+      "output": "out/basic/3_0_sample_01.out",
+      "description": "[Step3] グリッドのサイズが7×6である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 7"
+   },
+   {
+      "input": "in/basic/basic_1_1_large_00.in",
+      "output": "out/basic/basic_1_1_large_00.out",
+      "description": "[Step1] グリッドのサイズが2×278である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_large_01.in",
+      "output": "out/basic/basic_1_1_large_01.out",
+      "description": "[Step1] グリッドのサイズが2×253である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_large_02.in",
+      "output": "out/basic/basic_1_1_large_02.out",
+      "description": "[Step1] グリッドのサイズが2×279である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_large_03.in",
+      "output": "out/basic/basic_1_1_large_03.out",
+      "description": "[Step1] グリッドのサイズが2×289である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_large_04.in",
+      "output": "out/basic/basic_1_1_large_04.out",
+      "description": "[Step1] グリッドのサイズが2×299である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_random_00.in",
+      "output": "out/basic/basic_1_1_random_00.out",
+      "description": "[Step1] グリッドのサイズが2×192である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_random_01.in",
+      "output": "out/basic/basic_1_1_random_01.out",
+      "description": "[Step1] グリッドのサイズが2×133である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_random_02.in",
+      "output": "out/basic/basic_1_1_random_02.out",
+      "description": "[Step1] グリッドのサイズが2×194である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_random_03.in",
+      "output": "out/basic/basic_1_1_random_03.out",
+      "description": "[Step1] グリッドのサイズが2×283である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_random_04.in",
+      "output": "out/basic/basic_1_1_random_04.out",
+      "description": "[Step1] グリッドのサイズが2×152である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_small_00.in",
+      "output": "out/basic/basic_1_1_small_00.out",
+      "description": "[Step1] グリッドのサイズが2×2である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_small_01.in",
+      "output": "out/basic/basic_1_1_small_01.out",
+      "description": "[Step1] グリッドのサイズが2×5である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_small_02.in",
+      "output": "out/basic/basic_1_1_small_02.out",
+      "description": "[Step1] グリッドのサイズが2×5である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_small_03.in",
+      "output": "out/basic/basic_1_1_small_03.out",
+      "description": "[Step1] グリッドのサイズが2×2である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_1_1_small_04.in",
+      "output": "out/basic/basic_1_1_small_04.out",
+      "description": "[Step1] グリッドのサイズが2×9である場合に正答できる",
+      "description_en": "[Step1_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_2_1_random_00.in",
+      "output": "out/basic/basic_2_1_random_00.out",
+      "description": "[Step2] グリッドのサイズが122×275である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 122"
+   },
+   {
+      "input": "in/basic/basic_2_1_random_01.in",
+      "output": "out/basic/basic_2_1_random_01.out",
+      "description": "[Step2] グリッドのサイズが232×291である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 232"
+   },
+   {
+      "input": "in/basic/basic_2_1_random_02.in",
+      "output": "out/basic/basic_2_1_random_02.out",
+      "description": "[Step2] グリッドのサイズが205×45である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 205"
+   },
+   {
+      "input": "in/basic/basic_2_1_small_00.in",
+      "output": "out/basic/basic_2_1_small_00.out",
+      "description": "[Step2] グリッドのサイズが2×5である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_2_1_small_01.in",
+      "output": "out/basic/basic_2_1_small_01.out",
+      "description": "[Step2] グリッドのサイズが12×12である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 12"
+   },
+   {
+      "input": "in/basic/basic_2_1_small_02.in",
+      "output": "out/basic/basic_2_1_small_02.out",
+      "description": "[Step2] グリッドのサイズが12×8である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 12"
+   },
+   {
+      "input": "in/basic/basic_2_1_small_03.in",
+      "output": "out/basic/basic_2_1_small_03.out",
+      "description": "[Step2] グリッドのサイズが11×11である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 11"
+   },
+   {
+      "input": "in/basic/basic_2_1_small_04.in",
+      "output": "out/basic/basic_2_1_small_04.out",
+      "description": "[Step2] グリッドのサイズが11×15である場合に正答できる",
+      "description_en": "[Step2_en] Correct when N = 11"
+   },
+   {
+      "input": "in/basic/basic_3_1_random_00.in",
+      "output": "out/basic/basic_3_1_random_00.out",
+      "description": "[Step3] グリッドのサイズが122×275である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 122"
+   },
+   {
+      "input": "in/basic/basic_3_1_random_01.in",
+      "output": "out/basic/basic_3_1_random_01.out",
+      "description": "[Step3] グリッドのサイズが218×278である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 218"
+   },
+   {
+      "input": "in/basic/basic_3_1_random_02.in",
+      "output": "out/basic/basic_3_1_random_02.out",
+      "description": "[Step3] グリッドのサイズが221×129である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 221"
+   },
+   {
+      "input": "in/basic/basic_3_1_small_00.in",
+      "output": "out/basic/basic_3_1_small_00.out",
+      "description": "[Step3] グリッドのサイズが2×5である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 2"
+   },
+   {
+      "input": "in/basic/basic_3_1_small_01.in",
+      "output": "out/basic/basic_3_1_small_01.out",
+      "description": "[Step3] グリッドのサイズが5×6である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 5"
+   },
+   {
+      "input": "in/basic/basic_3_1_small_02.in",
+      "output": "out/basic/basic_3_1_small_02.out",
+      "description": "[Step3] グリッドのサイズが15×3である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 15"
+   },
+   {
+      "input": "in/basic/basic_3_1_small_03.in",
+      "output": "out/basic/basic_3_1_small_03.out",
+      "description": "[Step3] グリッドのサイズが14×14である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 14"
+   },
+   {
+      "input": "in/basic/basic_3_1_small_04.in",
+      "output": "out/basic/basic_3_1_small_04.out",
+      "description": "[Step3] グリッドのサイズが14×13である場合に正答できる",
+      "description_en": "[Step3_en] Correct when N = 14"
+   }
+]
