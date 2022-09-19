@@ -56,27 +56,27 @@ class UnionFind:
 
 dx = [-1, -1, 0, 0, 1, 1]
 dy = [-1, 0, -1, 1, 0, 1]
-mem = ["0" * 2010 for _ in range(2010)]
+
+mem = [[0] * 2020 for _ in range(2020)]
+mer = 1005
 n = int(input())
-uf = UnionFind(n + 1)
-X = []
-Y = []
+X, Y = [], []
 for i in range(n):
     x, y = map(int, input().split())
-    X.append(x + 1005)
-    Y.append(y + 1005)
-    mem[x + 1005][y + 1005] = i
+    x += mer
+    y += mer
+    X.append(x)
+    Y.append(y)
+    mem[X[i]][Y[i]] = i
 
+uf = UnionFind(n)
 
 for i in range(n):
-    for j in range(6):
-        nx = X[i] + dx[j]
-        ny = Y[i] + dy[j]
+    for k in range(6):
+        nx = X[i] + dx[k]
+        ny = Y[i] + dy[k]
 
         if mem[nx][ny] > 0:
             uf.union(i, mem[nx][ny])
-ans = 0
-for i in range(n + 1):
-    if uf.find(i) == i:
-        ans += 1
-print(ans)
+
+print(len(uf.all_group_members().keys()))
