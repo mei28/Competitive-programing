@@ -1,8 +1,8 @@
 class UnionFind:
-    def __init__(self, n) -> None:
+    def __init__(self, n, W) -> None:
         self.n = n
         self.par = [-1] * n
-        self.min_node = [i for i in range(n)]
+        self.weight = W
 
     def root(self, x):
         if self.par[x] < 0:
@@ -14,26 +14,26 @@ class UnionFind:
     def union(self, x, y):
         x = self.root(x)
         y = self.root(y)
-
         if x == y:
             return False
-
         if x > y:
             x, y = y, x
 
         self.par[x] += self.par[y]
         self.par[y] = x
-        self.min_node[x] = min(self.min_node[x], self.min_node[y])
+        self.weight[x] += self.weight[y]
+        return True
 
-    def get_min_node(self, x):
-        return self.min_node[self.root(x)]
+    def get_weight(self, x):
+        return self.weight[self.root(x)]
 
 
 n, m = map(int, input().split())
-uf = UnionFind(n)
+W = list(map(int, input().split()))
+uf = UnionFind(n, W)
 for _ in range(m):
-    a, b = map(int, input().split())
-    uf.union(a, b)
-
-for i in range(n):
-    print(uf.get_min_node(i))
+    t, x, y = map(int, input().split())
+    if t == 0:
+        uf.union(x, y)
+    else:
+        print(uf.get_weight(x))
