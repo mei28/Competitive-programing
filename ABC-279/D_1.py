@@ -1,6 +1,9 @@
+from functools import lru_cache
+
 a, b = map(int, input().split())
 
 
+@lru_cache
 def f(n):
     return n * b + a / ((n + 1) ** (0.5))
 
