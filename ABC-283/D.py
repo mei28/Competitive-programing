@@ -7,16 +7,24 @@ if S.count("(") != S.count(")"):
     print("No")
     exit()
 
-se = set()
 q = deque()
+q.append(set())
 for s in S:
-    if s in string.ascii_lowercase:
+    # print(q)
+    if s == "(":
+        se = q.pop()
+        q.append(se)
+        q.append(se.copy())
+    elif s in string.ascii_lowercase:
+        se = q.pop()
         if s not in se:
             se.add(s)
+            q.append(se)
         else:
             print("No")
             exit()
-    if s == ")":
-        pass
+    elif s == ")":
+        if len(q) > 0:
+            q.pop()
 
 print("Yes")
