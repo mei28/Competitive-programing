@@ -11,6 +11,6 @@ for a in A:
     dp[idx] = a
 ans = 0
 while dp[ans] != INF:
-    a += 1
+    ans += 1
 
 print(ans)
