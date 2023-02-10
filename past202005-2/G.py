@@ -3,8 +3,8 @@ from collections import deque
 
 n, X, Y = map(int, input().split())
 diff = 200
-G = [[True] * (402) for _ in range(402)]
-visited = [[-1] * (402) for _ in range(402)]
+G = [[True] * (401) for _ in range(401)]
+visited = [[-1] * (401) for _ in range(401)]
 X += diff
 Y += diff
 
@@ -34,11 +34,12 @@ while len(que) > 0:
         if G[nx][ny] == False:
             continue
 
-        if visited[nx][ny] >= 0:
-            continue
-
         if visited[nx][ny] < 0:
             que.append([nx, ny])
             visited[nx][ny] = visited[x][y] + 1
 
-print(visited[X][Y])
+        if nx == X and ny == Y:
+            print(visited[nx][ny])
+            exit()
+
+print(-1)
