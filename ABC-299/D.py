@@ -1,29 +1,23 @@
-import random
+N = int(input())
 
-n = int(input())
+if N == 2:
+    print("!", 1)
+    exit()
 
-idx = random.choice([i + 1 for i in range(n)])
-# sa = [i for i in range(0, n - 1, 2)]
-#
-# Qs = random.sample(sa, k=min(len(sa), 10))
-#
-# S = [2] * n
-#
-# for i in Qs:
-#     print(f"? {i+1}", flush=True)
-#     res = int(input())
-#     S[i] = res
-#     print(f"? {i+1+1}", flush=True)
-#     res1 = int(input())
-#     S[i + 1] = res1
-#
-#     if res != res1:
-#         print(f"! {i + 1}")
-#         exit()
-#
-# for i in range(n - 1):
-#     if S[i] != 2 and S[i + 1] != 2 and S[i] != S[i + 1]:
-#         print(f"! {i + 1}")
-#         exit()
-# print(f"! {ans}")
-# exit()
+l = 0
+r = N
+dic = dict()
+dic[0] = 0
+dic[1] = 1
+while 1:
+    mid = (l + r) // 2
+    print("?", mid + 1)
+    S = int(input())
+    dic[mid] = S
+    if mid + 1 in dic and dic[mid] != dic[mid + 1]:
+        print("!", mid + 1)
+        break
+    if S:
+        r = mid
+    else:
+        l = mid
