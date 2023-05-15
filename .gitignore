@@ -184,4 +184,6 @@ Cargo.lock
 */README.md
 */*-*/.gitignore
 */*-*/Cargo.toml
+*/*-*/src/main.rs
+*/*-*/main.rs
 */*-*/README.md
