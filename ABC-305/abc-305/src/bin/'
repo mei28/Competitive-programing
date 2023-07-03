@@ -1,0 +1,10 @@
+use proconio::{fastout, input};
+use std::cmp::{max, min};
+
+#[fastout]
+fn main() {
+    input! {p:usize,q:usize};
+
+    let v = [0, 3, 4, 8, 0, 14, 23];
+    println!("{}", v[p.max(q)] + v[q.min(p)]);
+}
