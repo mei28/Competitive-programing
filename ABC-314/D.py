@@ -3,7 +3,6 @@ S = list(input())
 Q = int(input())
 queries = [tuple(input().strip().split()) for _ in range(Q)]
 
-
 # クエリを順に処理
 last_idx = -1
 for i, q in enumerate(queries):
