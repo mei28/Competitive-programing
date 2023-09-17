@@ -36,3 +36,4 @@ fn main() {
     }
     println!("{}", max_val);
 }
+
