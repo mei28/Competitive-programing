@@ -1,49 +1,26 @@
-[tool.poetry]
+[project]
 name = "competitive-programing"
 version = "0.1.0"
-description = ""
-authors = ["y"]
-license = "MIT"
-
-[tool.poetry.dependencies]
-python = "^3.8"
-numpy = "^1.20.1"
-autopep8 = "^1.5.6"
-isort = "^5.8.0"
-mypy = "^0.812"
-black = "^20.8b1"
-pysen = "^0.9.1"
-flake8 = "^3.9.0"
-jedi = "^0.18.0"
-icecream = "^2.1.0"
-pre-commit = "^2.20.0"
-
-[tool.poetry.dev-dependencies]
+description = "Add your description here"
+authors = [
+    { name = "mei", email = "mei28aquarius@gmail.com" }
+]
+dependencies = [
+    "numpy==1.24.1",
+    "scipy==1.10.1",
+    "scikit-learn==1.2.0",
+    "polars==0.15.15",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
+[tool.rye]
+managed = true
+dev-dependencies = []
 
-[tool.black]
-line-length = 79
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | buck-out
-  | build
-  | dist
-  | migrations
-)/
-'''
-
-[tool.isort]
-profile = "black"
-skip_gitignore = true
-skip_glob = "*/migrations/*.py"
+[tool.hatch.metadata]
+allow-direct-references = true
