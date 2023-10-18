@@ -9,6 +9,26 @@ struct Item {
     group: usize,
 }
 
+fn select_samples(items: &Vec<Item>, indices: &mut Vec<usize>, k: usize) -> Vec<usize> {
+    indices.sort_by_key(|&index| items[index].weight);
+
+    let actual_k = std::cmp::min(k, indices.len() / 2); // 実際に使用するkの値
+
+    let top_k_lightest = indices
+        .iter()
+        .take(actual_k)
+        .cloned()
+        .collect::<Vec<usize>>();
+    let top_k_heaviest = indices
+        .iter()
+        .rev()
+        .take(actual_k)
+        .cloned()
+        .collect::<Vec<usize>>();
+
+    [top_k_lightest, top_k_heaviest].concat()
+}
+
 fn query(
     left_group: usize,
     right_group: usize,
@@ -30,8 +50,9 @@ fn query(
     // 最軽と推定されるアイテムと最重と推定されるアイテムを選択
     left.sort_by_key(|&index| items[index].weight);
     right.sort_by_key(|&index| items[index].weight);
-    let left_samples = vec![left[0], left[left.len() - 1]];
-    let right_samples = vec![right[0], right[right.len() - 1]];
+    let k = 3; // 例としてkを3に設定
+    let left_samples = select_samples(&items, &mut left, k);
+    let right_samples = select_samples(&items, &mut right, k);
 
     // クエリを投げる
     println!(
@@ -125,31 +146,38 @@ fn main() {
     }
     let mut query_count = 0;
     while query_count < q {
-        let group_a = query_count % d;
-        let group_b = (query_count + 1) % d;
-
+        let mut rng = rand::thread_rng();
+        let group_a: usize = rng.gen_range(0..d);
+        let mut group_b: usize;
+        loop {
+            group_b = rng.gen_range(0..d);
+            if group_a != group_b {
+                break;
+            }
+        }
         let (ans1, selected_left_1, selected_right_1) =
             query(group_a, group_b, &items, &mut query_count);
 
-        if ans1 == '<' {
-            items[selected_left_1[0]].weight -= 1;
-            items[selected_left_1[1]].weight += 1;
-            items[selected_right_1[0]].weight += 1;
-            items[selected_right_1[1]].weight -= 1;
+        if selected_left_1.len() >= 2 && selected_right_1.len() >= 2 {
+            if ans1 == '<' {
+                items[selected_left_1[0]].weight -= 1;
+                items[selected_left_1[1]].weight += 1;
+                items[selected_right_1[0]].weight += 1;
+                items[selected_right_1[1]].weight -= 1;
 
-            swap_specific_items(&selected_left_1, &selected_right_1, &mut items);
-        } else {
-            items[selected_left_1[0]].weight += 1;
-            items[selected_left_1[1]].weight -= 1;
-            items[selected_right_1[0]].weight -= 1;
-            items[selected_right_1[1]].weight += 1;
+                swap_specific_items(&selected_left_1, &selected_right_1, &mut items);
+            } else {
+                items[selected_left_1[0]].weight += 1;
+                items[selected_left_1[1]].weight -= 1;
+                items[selected_right_1[0]].weight -= 1;
+                items[selected_right_1[1]].weight += 1;
 
-            swap_specific_items(&selected_right_1, &selected_left_1, &mut items);
+                swap_specific_items(&selected_right_1, &selected_left_1, &mut items);
+            }
         }
-
-        reassign_groups_based_on_weight(&mut items, d);
     }
 
-    reassign_groups_based_on_weight(&mut items, d);
+    // reassign_groups_based_on_weight(&mut items, d);
     show_ans(&items, false);
 }
+
