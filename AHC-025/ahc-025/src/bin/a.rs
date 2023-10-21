@@ -1,6 +1,8 @@
 use proconio::{input, source::line::LineSource};
 use rand::seq::SliceRandom;
 use rand::Rng;
+use std::cmp::{max, min};
+use std::collections::HashMap;
 use std::io::{self, stdin, stdout, BufReader, Write};
 
 #[derive(Debug, Copy, Clone)]
@@ -34,6 +36,7 @@ fn query(
     right_group: usize,
     items: &Vec<Item>,
     query_count: &mut usize,
+    k: usize,
 ) -> (char, Vec<usize>, Vec<usize>) {
     let mut left: Vec<usize> = items
         .iter()
@@ -50,7 +53,6 @@ fn query(
     // 最軽と推定されるアイテムと最重と推定されるアイテムを選択
     left.sort_by_key(|&index| items[index].weight);
     right.sort_by_key(|&index| items[index].weight);
-    let k = 3; // 例としてkを3に設定
     let left_samples = select_samples(&items, &mut left, k);
     let right_samples = select_samples(&items, &mut right, k);
 
@@ -145,18 +147,39 @@ fn main() {
         });
     }
     let mut query_count = 0;
+    let mut k = 3;
+    let decrement_interval = q / k; // kの値を減少させるタイミング
+    let mut current_query_count_for_k = 0; // kの値を減少させるまでのクエリカウント
+    let mut comparison_counts: HashMap<(usize, usize), usize> = HashMap::new();
+
     while query_count < q {
         let mut rng = rand::thread_rng();
-        let group_a: usize = rng.gen_range(0..d);
-        let mut group_b: usize;
-        loop {
-            group_b = rng.gen_range(0..d);
-            if group_a != group_b {
-                break;
-            }
-        }
+
+        // 最も比較回数が少ないペアを探す
+        let (group_a, group_b) = {
+            let mut pairs: Vec<(usize, usize)> = (0..d)
+                .flat_map(|a| (0..d).map(move |b| (a, b)))
+                .filter(|&(a, b)| a != b)
+                .collect();
+            pairs.sort_by_key(|&(a, b)| comparison_counts.get(&(a, b)).unwrap_or(&0));
+            pairs[0]
+        };
+
+        // 比較回数を更新
+        let count = comparison_counts.entry((group_a, group_b)).or_insert(0);
+        *count += 1;
+
+        // current_query_count_for_k += 1;
+        //
+        // // kの値を減少させるタイミングか確認
+        // if current_query_count_for_k >= decrement_interval && k > 1 {
+        //     k -= 1;
+        //     k = max(k, 1);
+        //     current_query_count_for_k = 0;
+        // }
+
         let (ans1, selected_left_1, selected_right_1) =
-            query(group_a, group_b, &items, &mut query_count);
+            query(group_a, group_b, &items, &mut query_count, k);
 
         if selected_left_1.len() >= 2 && selected_right_1.len() >= 2 {
             if ans1 == '<' {
@@ -180,4 +203,3 @@ fn main() {
     // reassign_groups_based_on_weight(&mut items, d);
     show_ans(&items, false);
 }
-
