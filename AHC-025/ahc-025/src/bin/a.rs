@@ -147,7 +147,7 @@ fn main() {
         });
     }
     let mut query_count = 0;
-    let mut k = 3;
+    let mut k = 1;
     let decrement_interval = q / k; // kの値を減少させるタイミング
     let mut current_query_count_for_k = 0; // kの値を減少させるまでのクエリカウント
     let mut comparison_counts: HashMap<(usize, usize), usize> = HashMap::new();
