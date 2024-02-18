@@ -1,11 +1,13 @@
-n:  int = int(input())
+n: int = int(input())
 
-def dfs(s:str,mx):
-    if len(s) ==n:
+
+def dfs(s: str, mx):
+    if len(s) == n:
         print(s)
-        return 
-    
-    for i in range(ord('a'),ord(mx)+1):
-        dfs(s+chr(i), chr(ord(mx)+1)if chr(i)==mx else mx)
+        return
 
-dfs('','a')
+    for i in range(ord("a"), ord(mx) + 1):
+        dfs(s + chr(i), chr(ord(mx) + 1) if chr(i) == mx else mx)
+
+
+dfs("", "a")

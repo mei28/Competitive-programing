@@ -7,7 +7,7 @@ def solve(n, s, k):
     flg = False
     cnt = 0
     while sum(N) < 2 * n:
-        _next = (s+k) % n
+        _next = (s + k) % n
         s = _next
         N[_next] += 1
         cnt += 1

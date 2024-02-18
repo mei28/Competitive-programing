@@ -5,7 +5,7 @@ for _ in range(n):
     w, v = map(int, input().split())
     WV.append((w, v))
 
-WV.sort(key=lambda x:-x[1])
+WV.sort(key=lambda x: -x[1])
 X = list(map(int, input().split()))
 Q = []
 for i in range(q):

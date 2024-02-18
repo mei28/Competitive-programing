@@ -11,7 +11,6 @@ def binary_search(q: int, left: int):
 
 
 if __name__ == "__main__":
-
     N = int(input())
     L = list(map(int, input().split()))
     L.sort()

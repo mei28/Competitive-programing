@@ -1,6 +1,6 @@
 import sys
 
-sys.setrecursionlimit(10 ** 6)
+sys.setrecursionlimit(10**6)
 
 
 def dfs(v: int, p: int = -1) -> None:

@@ -1,18 +1,20 @@
-N, X = map(int,input().split())
+N, X = map(int, input().split())
 
-A = list(map(int,input().split()))
+A = list(map(int, input().split()))
 
 D = []
 
 for a in A:
-    D.append(abs(X-a))
+    D.append(abs(X - a))
 
-def gcd(a,b):
+
+def gcd(a, b):
     while b:
-        a,b = b, a%b
+        a, b = b, a % b
     return a
+
 
 ans = D[0]
 for d in D:
-    ans = gcd(ans,d)
+    ans = gcd(ans, d)
 print(ans)

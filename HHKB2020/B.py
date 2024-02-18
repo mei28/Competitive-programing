@@ -8,13 +8,13 @@ for i in range(H):
 cnt = 0
 
 for i in range(H):
-    for j in range(1,W):
-        if mat[i][j - 1] == '.' and mat[i][j] == '.':
-            cnt +=1
+    for j in range(1, W):
+        if mat[i][j - 1] == "." and mat[i][j] == ".":
+            cnt += 1
 
 for j in range(W):
     for i in range(1, H):
-        if mat[i - 1][j] == '.' and mat[i][j] == '.':
-            cnt+=1
+        if mat[i - 1][j] == "." and mat[i][j] == ".":
+            cnt += 1
 
 print(cnt)

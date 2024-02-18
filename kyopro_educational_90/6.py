@@ -1,6 +1,6 @@
 # S = input()
 # N = int(input())
-k, N = map(int,input().split()) 
+k, N = map(int, input().split())
 S = input()
 
 nex = [[0 for _ in range(100100)] for _ in range(26)]

@@ -26,7 +26,7 @@ if (r1 + c1) % 2 == (r2 + c2) % 2:
 
 for i in range(-4, 5):
     for j in range(-4, 5):
-        r3, c3 = r1+i, c1+j
+        r3, c3 = r1 + i, c1 + j
         if ok(r1, c1, r3, c3) and ok(r3, c3, r2, c2):
             print(2)
             exit()

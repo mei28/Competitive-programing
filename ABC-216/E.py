@@ -21,7 +21,7 @@ def main():
     N, K = map(int, input().split())
     A = list(map(int, input().split()))
 
-    ok = 2 * 10 ** 9 + 5
+    ok = 2 * 10**9 + 5
     ng = 0
 
     while abs(ok - ng) > 1:

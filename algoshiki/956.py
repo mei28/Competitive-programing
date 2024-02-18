@@ -29,4 +29,3 @@ for i in range(n):
         dfs(i)
         ans += 1
 print(ans)
-

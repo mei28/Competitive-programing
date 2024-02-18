@@ -16,7 +16,7 @@ def cnt(m):
 
 
 def solve(k):
-    bottom, top = 0, 10 ** 19
+    bottom, top = 0, 10**19
     while top - bottom > 1:
         mid = (top + bottom) // 2
         if cnt(mid) < k:

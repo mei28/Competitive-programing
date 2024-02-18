@@ -10,4 +10,4 @@ for i in A:
 if cnt >= M:
     print("Yes")
 else:
-    print('No')
+    print("No")

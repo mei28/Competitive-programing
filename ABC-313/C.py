@@ -1,5 +1,6 @@
 import heapq
 
+
 def min_operations(nums):
     min_heap = nums[:]  # 最小ヒープ
     max_heap = [-num for num in nums]  # 最大ヒープ
@@ -24,8 +25,8 @@ def min_operations(nums):
 
     return operations
 
+
 n = int(input())
-A = list(map(int,input().split()))
+A = list(map(int, input().split()))
 
 print(min_operations(A))
-

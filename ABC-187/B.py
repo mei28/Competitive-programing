@@ -4,8 +4,8 @@ for i in range(N):
     line = list(map(int, input().split()))
     D.append(line)
 cnt = 0
-for i in range(N-1):
-    for j in range(i+1, N):
+for i in range(N - 1):
+    for j in range(i + 1, N):
         a = D[i]
         b = D[j]
 

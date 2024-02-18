@@ -1,14 +1,15 @@
 import math
+
 N, M = map(int, input().split())
 
 if M == 0:
     print(N)
     exit()
 
-H = [1]*N
+H = [1] * N
 A = list(map(int, input().split()))
 for a in A:
-    H[a-1] = 0
+    H[a - 1] = 0
 
 if M == N:
     print(0)
@@ -35,6 +36,6 @@ if len(rens) == 0:
 stride = min(rens)
 ans = 0
 for a in rens:
-    ans += math.ceil(a/stride)
+    ans += math.ceil(a / stride)
 
 print(ans)

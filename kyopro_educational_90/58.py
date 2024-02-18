@@ -9,11 +9,11 @@ if __name__ == "__main__":
 
     calculator = [n]
 
-    for i in range(10 ** 5 + 100):
+    for i in range(10**5 + 100):
         nxt = f(calculator[-1])
         calculator.append(nxt)
 
-    if k < 10 ** 5:
+    if k < 10**5:
         ans = n
         for i in range(k):
             ans = f(ans)

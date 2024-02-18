@@ -1,14 +1,14 @@
-n,q = map(int,input().split())
+n, q = map(int, input().split())
 dct = {}
-A = list(map(int,input().split()))
+A = list(map(int, input().split()))
 
 for i, x in enumerate(A):
     if x not in dct.keys():
         dct[x] = []
 
-    dct[x].append(i+1)
+    dct[x].append(i + 1)
 for _ in range(q):
-    x,k = map(int,input().split())
+    x, k = map(int, input().split())
 
     if x not in dct.keys():
         print(-1)
@@ -17,4 +17,4 @@ for _ in range(q):
         if k > len(d):
             print(-1)
         else:
-            print(d[k-1])
+            print(d[k - 1])

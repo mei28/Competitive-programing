@@ -16,33 +16,13 @@ def show(grid):
 
 def check(grid):
     flg = grid[0][0] == grid[0][1] == grid[0][2] == "#" and grid[0][3] == "."
-    flg = (
-        grid[1][0] == grid[1][1] == grid[1][2] == "#"
-        and grid[1][3] == "."
-        and flg
-    )
-    flg = (
-        grid[2][0] == grid[2][1] == grid[2][2] == "#"
-        and grid[2][3] == "."
-        and flg
-    )
+    flg = grid[1][0] == grid[1][1] == grid[1][2] == "#" and grid[1][3] == "." and flg
+    flg = grid[2][0] == grid[2][1] == grid[2][2] == "#" and grid[2][3] == "." and flg
     flg = grid[3][0] == grid[3][1] == grid[3][2] == grid[3][3] == "." and flg
 
-    flg = (
-        grid[8][5] == "."
-        and grid[8][6] == grid[8][7] == grid[8][8] == "#"
-        and flg
-    )
-    flg = (
-        grid[7][5] == "."
-        and grid[7][6] == grid[7][7] == grid[7][8] == "#"
-        and flg
-    )
-    flg = (
-        grid[6][5] == "."
-        and grid[6][6] == grid[6][7] == grid[6][8] == "#"
-        and flg
-    )
+    flg = grid[8][5] == "." and grid[8][6] == grid[8][7] == grid[8][8] == "#" and flg
+    flg = grid[7][5] == "." and grid[7][6] == grid[7][7] == grid[7][8] == "#" and flg
+    flg = grid[6][5] == "." and grid[6][6] == grid[6][7] == grid[6][8] == "#" and flg
     flg = grid[5][5] == grid[5][6] == grid[5][7] == grid[5][8] == "." and flg
     return flg
 

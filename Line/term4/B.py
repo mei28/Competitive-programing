@@ -1,13 +1,13 @@
 def show_ans(ans):
     for i in ans:
-        print(''.join(i))
+        print("".join(i))
 
 
 def convert_1d_to_2d(l, cols):
-    return [l[i:i+cols] for i in range(0, len(l), cols)]
+    return [l[i : i + cols] for i in range(0, len(l), cols)]
 
-if __name__ == '__main__':
 
+if __name__ == "__main__":
     N, H, W, X, Y, Z = map(int, input().split())
     A = list(map(int, input().split()))
 
@@ -15,9 +15,9 @@ if __name__ == '__main__':
 
     for i, a in enumerate(A):
         # チーム名を付与
-        team[i] = (a, chr(ord('A')+i))
+        team[i] = (a, chr(ord("A") + i))
 
-    seats = [['.']*W for _ in range(H)]
+    seats = [["."] * W for _ in range(H)]
 
     for i in range(H):
         line = input()

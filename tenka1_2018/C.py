@@ -6,8 +6,8 @@ def main():
 
     # 偶数個の場合
     if N % 2 == 0:
-        plus = A[N//2:]
-        minus = A[:N//2]
+        plus = A[N // 2 :]
+        minus = A[: N // 2]
 
         result = 2 * sum(plus) - 2 * sum(minus)
 
@@ -17,9 +17,9 @@ def main():
 
     # 奇数個の場合
     else:
-        plus = A[N//2+1:]
-        minus = A[:N//2]
-        mid = A[N//2]
+        plus = A[N // 2 + 1 :]
+        minus = A[: N // 2]
+        mid = A[N // 2]
 
         tmp_r = 2 * sum(plus) - 2 * sum(minus)
 
@@ -36,5 +36,6 @@ def main():
         result = max(res1, res2)
 
     print(result)
+
 
 main()

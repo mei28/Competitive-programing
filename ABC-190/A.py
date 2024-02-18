@@ -1,12 +1,12 @@
-A,B,C = map(int,input().split())
+A, B, C = map(int, input().split())
 
 if C == 0:
     if A <= B:
-        print('Aoki')
+        print("Aoki")
     else:
-        print('Takahashi')
+        print("Takahashi")
 else:
     if B <= A:
-        print('Takahashi')
+        print("Takahashi")
     else:
-        print('Aoki')
+        print("Aoki")

@@ -9,7 +9,7 @@ def fill(l, r, height):
 
 if __name__ == "__main__":
     W, N = map(int, input().split())
-    A = [0 for i in range(5 * 10 ** 5 + 100)]
+    A = [0 for i in range(5 * 10**5 + 100)]
     LR = []
     for i in range(N):
         l, r = map(int, input().split())

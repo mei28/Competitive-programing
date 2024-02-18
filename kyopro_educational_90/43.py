@@ -2,10 +2,10 @@ from collections import deque
 
 
 class State(object):
-    """Docstring for MyClass. """
+    """Docstring for MyClass."""
 
     def __init__(self, x, y, direct):
-        """TODO: to be defined. """
+        """TODO: to be defined."""
         self.x = x
         self.y = y
         self.direct = direct

@@ -22,12 +22,13 @@
 #     k = K[i]
 #     print(solve(n, s, k))
 
+
 def euclid(x, y):
     if y == 0:
         return (0, 1, y)
     else:
         (A, B, g) = euclid(y, y % x)
-        return (-B*(y//x), A+B, g)
+        return (-B * (y // x), A + B, g)
 
 
 t = int(input())
@@ -35,11 +36,11 @@ t = int(input())
 for _ in range(t):
     n, s, k = map(int, input().split())
     (a, b, g) = euclid(k, n)
-    if ((-s - 1) % g == 0):
+    if (-s - 1) % g == 0:
         print(-1)
         exit()
 
-    a *= (-s-1)//g
-    b *= (-s-1)//g
-    a %= (n//g)
+    a *= (-s - 1) // g
+    b *= (-s - 1) // g
+    a %= n // g
     print(a)

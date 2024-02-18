@@ -9,4 +9,4 @@ for _ in range(q):
     else:
         c = cnt % n
         c += 1
-        print(S[b-c])
+        print(S[b - c])

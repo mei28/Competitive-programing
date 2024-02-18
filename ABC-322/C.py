@@ -13,15 +13,14 @@ def find_next_firework(day, firework_days):
 
     return firework_days[low] - day
 
+
 def main():
     N, M = map(int, input().split())
     firework_days = list(map(int, input().split()))
 
-    for i in range(1, N+1):
+    for i in range(1, N + 1):
         print(find_next_firework(i, firework_days))
+
 
 if __name__ == "__main__":
     main()
-
-
-

@@ -5,10 +5,10 @@ B = list(input().split())
 flip = False
 if X <= 2 * Y:
     flip = True
-A = [1 if i == 'R' else 0 for i in A]
-B = [1 if i == 'R' else 0 for i in B]
+A = [1 if i == "R" else 0 for i in A]
+B = [1 if i == "R" else 0 for i in B]
 # C = [0 if i == j else 1 for i, j in zip(A, B)]
-C = [i-j for i, j in zip(A, B)]
+C = [i - j for i, j in zip(A, B)]
 
 cost = 0
 fliped = False
@@ -25,9 +25,9 @@ if flip:
             B[i] = tmp
             cost += X
             fliped = True
-    C = [i-j for i, j in zip(A, B)]
-    cost += sum([abs(i) for i in C])*Y
+    C = [i - j for i, j in zip(A, B)]
+    cost += sum([abs(i) for i in C]) * Y
 else:
-    cost = sum([abs(i) for i in C])*Y
+    cost = sum([abs(i) for i in C]) * Y
 
 print(cost)

@@ -6,7 +6,7 @@ for i in range(n):
     XLs.append([x, l, x + l])
 XLs = list(sorted(XLs, key=lambda x: x[2]))
 
-choice = -(10 ** 10)
+choice = -(10**10)
 cnt = 0
 for i in range(n):
     x = XLs[i][0]

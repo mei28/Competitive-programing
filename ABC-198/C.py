@@ -2,7 +2,7 @@ import math
 
 R, X, Y = map(int, input().split())
 
-dist = math.sqrt(X ** 2 + Y ** 2)
+dist = math.sqrt(X**2 + Y**2)
 
 if dist == R:
     print(1)

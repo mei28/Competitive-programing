@@ -2,7 +2,7 @@ k = int(input())
 
 primers = []
 
-for i in range(1, int(k ** 0.5) + 1):
+for i in range(1, int(k**0.5) + 1):
     if k % i != 0:
         continue
     primers.append(i)

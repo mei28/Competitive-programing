@@ -1,3 +1,3 @@
 s = input()
 c = input()
-print(s.replace(c, c+c))
+print(s.replace(c, c + c))

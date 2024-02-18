@@ -3,7 +3,7 @@ n = a + b
 
 c = 0
 ans = ""
-for bit in range((1 << a) - 1, 2 ** n):
+for bit in range((1 << a) - 1, 2**n):
     cnt = 0
     ans = ""
     for j in range(n):

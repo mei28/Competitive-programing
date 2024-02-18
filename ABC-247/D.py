@@ -20,11 +20,12 @@ def main():
                     c -= cnt
                 else:
                     sm += num * c
-                    deq[0][1] -= c  # cntではなく、deq[0][1] を c個減らしてください（cntは、deq[0][1]の値をコピーした別の実体です）
+                    deq[0][
+                        1
+                    ] -= c  # cntではなく、deq[0][1] を c個減らしてください（cntは、deq[0][1]の値をコピーした別の実体です）
                     c = 0
             print(sm)  # 忘れずに
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-

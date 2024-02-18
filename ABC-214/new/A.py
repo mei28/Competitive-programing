@@ -1,8 +1,8 @@
 n = int(input())
 
-if 1<=n<=125:
-    print('4')
-elif n<=211:
-    print('6')
+if 1 <= n <= 125:
+    print("4")
+elif n <= 211:
+    print("6")
 else:
-    print('8')
+    print("8")

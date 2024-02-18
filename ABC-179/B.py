@@ -20,6 +20,6 @@ for i in D:
         flg = True
         break
 if flg:
-    print('Yes')
+    print("Yes")
 else:
-    print('No')
+    print("No")

@@ -108,7 +108,9 @@ class BalancingTree:
     def sum(self):
         return self.root.sum
 
-    def delete(self, v, nd=None, prev=None, chk=0):  # 値がvのノードがあれば削除（なければ何もしない）
+    def delete(
+        self, v, nd=None, prev=None, chk=0
+    ):  # 値がvのノードがあれば削除（なければ何もしない）
         v += 1
         ### ここから
         if 1:
@@ -195,9 +197,7 @@ class BalancingTree:
                 if k < l:
                     nd = nd.left
                 elif k > l:
-                    re += nd.left.sum + (
-                        nd.value - 1 >> self.identifying_bit_length
-                    )
+                    re += nd.left.sum + (nd.value - 1 >> self.identifying_bit_length)
                     k -= l + 1
                     nd = nd.right
                 else:
@@ -320,9 +320,7 @@ class BalancingTree:
                 re += debug_node(nd.right)
             return re
 
-        print(
-            "Debug - root =", self.root.value - 1, debug_node(self.root)[:50]
-        )
+        print("Debug - root =", self.root.value - 1, debug_node(self.root)[:50])
 
     def debug_list(self):
         def debug_node(nd):

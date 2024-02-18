@@ -8,7 +8,7 @@ for i in range(N):
     tmp = v * p
     ans += tmp
     if ans > X * 100:
-        print(i+1)
+        print(i + 1)
         exit()
 
 print(-1)

@@ -13,7 +13,7 @@ for i in range(1, n):
     B[i] += B[i - 1]
     B_min[i] = min(B_min[i], B_min[i - 1])
 
-ans = 10 ** 30
+ans = 10**30
 for i in range(n):
     tmp = A[i] + B[i] + B_min[i] * max(0, (x - (i + 1)))
     ans = min(ans, tmp)

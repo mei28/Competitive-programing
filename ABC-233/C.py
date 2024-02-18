@@ -1,11 +1,12 @@
 from collections import Counter
 from itertools import product
-n,x = map(int,input().split())
+
+n, x = map(int, input().split())
 
 AA = []
 L = []
 for i in range(n):
-    tmp = list(map(int,input().split()))
+    tmp = list(map(int, input().split()))
     l = tmp[0]
     a = tmp[1:]
     L.append(l)
@@ -25,8 +26,8 @@ l_p = list(product(*keys))
 ans = 0
 for c in l_p:
     tmp = 1
-    ans_tmp = 1 
-    for i, a in enumerate(c): 
+    ans_tmp = 1
+    for i, a in enumerate(c):
         tmp *= a
         ans_tmp *= AA[i][a]
 

@@ -12,12 +12,12 @@ for i, w in enumerate(W):
         cnt.add(w)
         continue
     if w[0] != last:
-        print('No')
+        print("No")
         exit()
     last = w[-1]
     cnt.add(w)
-    if i+1 != len(cnt):
-        print('No')
+    if i + 1 != len(cnt):
+        print("No")
         exit()
 
-print('Yes')
+print("Yes")

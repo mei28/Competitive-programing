@@ -1,4 +1,5 @@
 from collections import defaultdict
+
 S = input()
 n = len(S)
 result = 0
@@ -8,7 +9,7 @@ cnt = defaultdict(int)
 # 前の文字と、前の前の文字
 prev_c, prev2_c = "", ""
 
-for i in range(len(S)-1, -1, -1):
+for i in range(len(S) - 1, -1, -1):
     now_c = S[i]
 
     # 前と違う文字が二回連続で現れたら

@@ -2,7 +2,7 @@ h, n = map(int, input().split())
 a, b = [0] * n, [0] * n
 for i in range(n):
     a[i], b[i] = map(int, input().split())
-inf = 10 ** 10
+inf = 10**10
 dp = [[inf] * (h + 1) for i in range(n + 1)]
 dp[0][0] = 0
 for i in range(n):

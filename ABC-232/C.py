@@ -1,19 +1,20 @@
 import itertools
-n,m = map(int,input().split())
 
-A = [[False]*n for _ in range(n)]
-B = [[False]*n for _ in range(n)]
+n, m = map(int, input().split())
+
+A = [[False] * n for _ in range(n)]
+B = [[False] * n for _ in range(n)]
 
 for _ in range(m):
-    u,v = map(int,input().split())
-    u-=1
-    v-=1
+    u, v = map(int, input().split())
+    u -= 1
+    v -= 1
     A[u][v] = A[v][u] = True
 
 for _ in range(m):
-    u,v = map(int,input().split())
-    u-=1
-    v-=1
+    u, v = map(int, input().split())
+    u -= 1
+    v -= 1
     B[u][v] = B[v][u] = True
 
 ans = False

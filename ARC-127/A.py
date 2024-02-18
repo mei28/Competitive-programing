@@ -20,6 +20,6 @@ for i in range(1, 16):
         if n < bottom:
             break
 
-        result += min(n,top) - bottom + 1
+        result += min(n, top) - bottom + 1
 
 print(result)

@@ -12,10 +12,9 @@ for i in range(m):
     for j in range(m):
         q = keys[i]
         r = keys[j]
-        if q*r > keys[-1]:
+        if q * r > keys[-1]:
             break
-        ans += dct.setdefault(q,0)*dct.setdefault(r,0)*dct.setdefault(q*r,0)
+        ans += dct.setdefault(q, 0) * dct.setdefault(r, 0) * dct.setdefault(q * r, 0)
 
 
 print(ans)
-

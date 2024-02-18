@@ -1,5 +1,5 @@
 H, W = map(int, input().split())
-A = [] 
+A = []
 for i in range(H):
     l = list(map(int, input().split()))
     for j in l:
@@ -11,6 +11,6 @@ _min = min(A)
 ans = 0
 
 for i in A:
-    ans += i-_min
+    ans += i - _min
 
 print(ans)

@@ -9,8 +9,8 @@ D = [[0] * N for _ in range(N)]
 for i in range(N - 1):
     row = list(map(int, input().split()))
     for j, val in enumerate(row):
-        D[i][i+j+1] = val
-        D[i+j+1][i] = val
+        D[i][i + j + 1] = val
+        D[i + j + 1][i] = val
 
 # すべての頂点の組み合わせでの最大値を計算
 max_val = 0
@@ -28,4 +28,3 @@ for comb in combinations(range(N), N - 1 if N % 2 == 1 else N):
     max_val = max(max_val, dp[(1 << len(comb)) - 1])
 
 print(max_val)
-

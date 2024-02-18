@@ -10,7 +10,9 @@ def solve(s: str) -> int:
             even_num = cnt // 2  # 折返し地点までの距離が偶数の人の数
             odd_num = cnt - even_num  # 折返し地点までの距離が奇数の人の数
             ans[i] += even_num  # 折返し地点までの距離が偶数の人は、ans[i]に収束する
-            ans[i - 1] += odd_num  # 折返し地点までの距離が奇数の人は、ans[i-1]に収束する
+            ans[
+                i - 1
+            ] += odd_num  # 折返し地点までの距離が奇数の人は、ans[i-1]に収束する
             cnt = 0
 
     # Lグループについて考える

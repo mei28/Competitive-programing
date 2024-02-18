@@ -10,6 +10,6 @@ for i in range(N):
 ans = 0
 
 for a, b in zip(A, B):
-    n = b-a+1
-    ans += (a+b)*n//2
+    n = b - a + 1
+    ans += (a + b) * n // 2
 print(ans)

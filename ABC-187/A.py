@@ -7,4 +7,4 @@ for i in A:
 for i in B:
     b += int(i)
 
-print(max(a,b))
+print(max(a, b))

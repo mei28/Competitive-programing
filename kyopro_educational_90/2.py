@@ -6,7 +6,7 @@ if N % 2 == 1:
 
 def check(s: str) -> bool:
     cnt = 0
-    if s.count('(') != s.count(')'):
+    if s.count("(") != s.count(")"):
         return False
 
     for i in s:

@@ -3,7 +3,7 @@ import sys
 
 def check_set(s: str) -> bool:
     _s = set(s)
-    symbol_set = set(['@', '$', '%'])
+    symbol_set = set(["@", "$", "%"])
     _s_alp = _s - symbol_set
     _s_symbol = _s & symbol_set
     if len(_s_alp) >= 5 and _s_symbol:
@@ -21,16 +21,16 @@ def main(lines):
 
     s = lines[0]
 
-    for i in range(6, len(s)+1):
-        for j in range(0, len(s)-i+1):
-            _tmp = s[j:j+i]
+    for i in range(6, len(s) + 1):
+        for j in range(0, len(s) - i + 1):
+            _tmp = s[j : j + i]
             if check_set(_tmp):
                 print(len(_tmp))
                 exit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     lines = []
     for l in sys.stdin:
-        lines.append(l.rstrip('\r\n'))
+        lines.append(l.rstrip("\r\n"))
     main(lines)

@@ -9,7 +9,6 @@ dp = [0] * (N + 100)
 
 dp[0] = 1
 for i in range(1, N + 10):
-
     if not is_safe[i]:
         dp[i] == 0
         continue

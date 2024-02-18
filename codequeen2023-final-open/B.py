@@ -1,5 +1,5 @@
 N = int(input())
-queens = [tuple(map(int, input().strip().split())) for _ in range(N-1)]
+queens = [tuple(map(int, input().strip().split())) for _ in range(N - 1)]
 
 rows = [False] * N
 cols = [False] * N
@@ -18,9 +18,13 @@ for r, c in queens:
 # クイーンを配置できる場所を探す
 for i in range(N):
     for j in range(N):
-        if not rows[i] and not cols[j] and not diag1[i + j] and not diag2[i - j + N - 1]:
+        if (
+            not rows[i]
+            and not cols[j]
+            and not diag1[i + j]
+            and not diag2[i - j + N - 1]
+        ):
             print(i + 1, j + 1)
             exit()
 
-print(-1) # クイーンを配置できる場所がない場合
-
+print(-1)  # クイーンを配置できる場所がない場合

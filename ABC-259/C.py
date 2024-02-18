@@ -30,7 +30,7 @@ for s, t in zip(S_, T_):
         exit()
 
     if a != b:
-        if a > b or a==1:
+        if a > b or a == 1:
             print("No")
             exit()
 

@@ -1,7 +1,7 @@
 def min_switches_to_win(N, districts):
     gains = []
     total_seats = 0
-    
+
     for X, Y, Z in districts:
         if X > Y:
             total_seats += Z
@@ -15,7 +15,7 @@ def min_switches_to_win(N, districts):
 
     half_seats = sum(Z for _, _, Z in districts) // 2 + 1
     switches_needed = 0
-    
+
     for efficiency, switch, Z in gains:
         if total_seats + Z < half_seats:
             total_seats += Z
@@ -28,7 +28,7 @@ def min_switches_to_win(N, districts):
 
     return switches_needed
 
+
 N = int(input())
 districts = [list(map(int, input().split())) for _ in range(N)]
 print(min_switches_to_win(N, districts))
-

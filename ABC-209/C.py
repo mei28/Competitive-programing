@@ -6,7 +6,6 @@ ans = 1
 C.sort()
 
 for i, c in enumerate(C):
-
     ans = ans * (c - i) % MOD
 
 print(ans)

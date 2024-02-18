@@ -14,19 +14,19 @@ for a, b in zip(A, B):
     if N_now == N and diff_t == 1:
         continue
     if N_now - diff_t <= 0:
-        print('No')
+        print("No")
         exit()
     N_now = N_now - diff_t
 
     diff = b - a
-    N_now = min(N_now+diff, N)
+    N_now = min(N_now + diff, N)
 
     b_last = b
-diff_t = T-b_last
+diff_t = T - b_last
 
 if N_now - diff_t > 0:
     print("Yes")
     exit()
 
 else:
-    print('No')
+    print("No")

@@ -1,6 +1,6 @@
 import sys
 
-sys.setrecursionlimit(10 ** 7)
+sys.setrecursionlimit(10**7)
 n = int(input())
 X = [-1] + list(map(int, input().split()))
 C = [-1] + list(map(int, input().split()))

@@ -12,7 +12,7 @@ def main(lines):
     num = int(lines.pop(-1))
     dct = {}
     for l in lines:
-        k, v = l.split(':')
+        k, v = l.split(":")
         k = int(k)
         dct[k] = v
     # sort
@@ -24,14 +24,14 @@ def main(lines):
     flg = True
     for k, v in dct.items():
         if num % k == 0:
-            print(v, end='')
+            print(v, end="")
             flg = False
     if flg:
         print(num)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     lines = []
     for l in sys.stdin:
-        lines.append(l.rstrip('\r\n'))
+        lines.append(l.rstrip("\r\n"))
     main(lines)

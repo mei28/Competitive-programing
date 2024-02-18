@@ -21,6 +21,6 @@ n = int(input())
 #     ans += n
 
 # else:
-#     ans = 
-    
-print(n*[-i*n])
+#     ans =
+
+print(n * [-i * n])

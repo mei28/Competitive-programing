@@ -6,7 +6,6 @@ N = int(input())
 
 
 def rotation_o(u, t, deg=False):
-
     # 度数単位の角度をラジアンに変換
     if deg == True:
         t = np.deg2rad(t)
@@ -18,7 +17,6 @@ def rotation_o(u, t, deg=False):
 
 
 def rotation(xy, r_axis, t, deg=False):
-
     # 度数単位の角度をラジアンに変換
     if deg == True:
         t = np.deg2rad(t)

@@ -2,7 +2,7 @@ n = int(input())
 A = list(map(int, input().split()))
 
 pre_sum = [0]
-mn, mx, y, x = 10 ** 18, 0, 0, 10 ** 18
+mn, mx, y, x = 10**18, 0, 0, 10**18
 
 for i in range(n):
     if A[i]:

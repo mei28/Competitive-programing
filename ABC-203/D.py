@@ -35,7 +35,7 @@ if __name__ == "__main__":
     field2 = [[0] * (n + 1) for _ in range(n + 1)]
 
     mid_pos = k * k + 1 - (k * k // 2 + 1)
-    bottom, top = 0, 10 ** 10
+    bottom, top = 0, 10**10
 
     while top - bottom > 1:
         mid = (top + bottom) // 2

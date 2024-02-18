@@ -14,7 +14,7 @@ def solve(x):
     n = len(x)
     used = [False] * n
     ans = 0
-    for (v, w) in item:
+    for v, w in item:
         for j in range(n):
             if used[j]:
                 continue

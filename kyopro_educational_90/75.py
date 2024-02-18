@@ -1,7 +1,7 @@
 n = int(input())
 primes = dict()
 
-for denominator in range(2, int(n ** 0.5) + 1):
+for denominator in range(2, int(n**0.5) + 1):
     while n % denominator == 0:
         n //= denominator
         primes[denominator] = primes.setdefault(denominator, 0) + 1

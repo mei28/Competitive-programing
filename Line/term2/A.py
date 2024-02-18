@@ -1,6 +1,6 @@
 def rnd():
     global state
-    state = (state*1564328749 + 12345) % (2**31)
+    state = (state * 1564328749 + 12345) % (2**31)
     return state
 
 
@@ -16,9 +16,9 @@ def make_command():
     global state
     for idx in range(Q):
         if rnd() < THRESHOLD:
-            l = (rnd() % N)
-            r = (rnd() % N)
-            v = (rnd() % MAXV)+1
+            l = rnd() % N
+            r = rnd() % N
+            v = (rnd() % MAXV) + 1
 
             # if l > r:
             #     tmp = r
@@ -28,9 +28,9 @@ def make_command():
             r = max(l, r)
             l = tmp
 
-            commands[idx] = ('B', l, r, v)
+            commands[idx] = ("B", l, r, v)
         else:
-            i = (rnd() % N)
+            i = rnd() % N
             x = (rnd() % MAXA) + 1
             commands[idx] = ("A", i, x)
     return commands
@@ -44,7 +44,7 @@ def solveA(A, commands):
 
 def solveB(A, commands):
     l, r, v = commands[0], commands[1], commands[2]
-    tmp = A.copy()[l: r + 1]
+    tmp = A.copy()[l : r + 1]
     tmp = list(map(lambda x: x % v, A))
     return A, tmp.count(0)
     # cnt = 0
@@ -58,7 +58,7 @@ def solveB(A, commands):
 def solve(A, commands):
     ans = 0
     for i in commands:
-        if i[0] == 'A':
+        if i[0] == "A":
             A = solveA(A, i[1:])
         else:
             A, cnt = solveB(A, i[1:])

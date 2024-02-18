@@ -2,25 +2,25 @@
 S = input()
 
 # 先頭の文字が 'A'
-if S[0] != 'A':
-  print('WA')
-  exit()
+if S[0] != "A":
+    print("WA")
+    exit()
 
 # 先頭から3文字目と末尾から2文字目の間に
 # 'C' が含まれる
-if 'C' not in S[2:-1]:
-  print('WA')
-  exit()
+if "C" not in S[2:-1]:
+    print("WA")
+    exit()
 
 # 上記2文字以外はすべて小文字である
 s = list(S)
-s.remove('A')
-s.remove('C')
+s.remove("A")
+s.remove("C")
 
 for x in s:
-  if x not in 'abcdefghijklmnopqrstuvwxyz':
-    print('WA')
-    exit()
+    if x not in "abcdefghijklmnopqrstuvwxyz":
+        print("WA")
+        exit()
 
 # チェックに一度もかからなかった場合
-print('AC')
+print("AC")

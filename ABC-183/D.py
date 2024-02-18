@@ -20,9 +20,9 @@ for _ in range(n):
     demand[t] -= p
 
 for i in range(1, 2200000):
-    demand[i] += demand[i-1]
+    demand[i] += demand[i - 1]
 
 if max(demand) <= w:
-    print('Yes')
+    print("Yes")
 else:
-    print('No')
+    print("No")

@@ -29,11 +29,12 @@ class UnionFind:
     def size(self, x: int):
         return -self.par[self.root(x)]
 
-A,B =[],[]
+
+A, B = [], []
 for i in range(m):
-    a,b = map(int,input().split())
-    a-=1
-    b-=1
+    a, b = map(int, input().split())
+    a -= 1
+    b -= 1
     A.append(a)
     B.append(b)
 
@@ -42,15 +43,15 @@ ans = 0
 for i in range(m):
     uf = UnionFind(n)
     for j in range(m):
-        if i==j:
+        if i == j:
             continue
-        uf.merge(A[j],B[j])
+        uf.merge(A[j], B[j])
 
     num = 0
     for i in range(n):
-        if uf.root(i)==i:
+        if uf.root(i) == i:
             num += 1
-    if num>1:
-        ans +=1
+    if num > 1:
+        ans += 1
 
 print(ans)

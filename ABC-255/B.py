@@ -16,7 +16,7 @@ for i in range(1, n + 1):
             break
         xa, ya = XY[a]
         diff = (xi - xa) ** 2 + (yi - ya) ** 2
-        diff = diff ** 0.5
+        diff = diff**0.5
         tmp.append(diff)
     tmp.sort()
     if tmp != []:

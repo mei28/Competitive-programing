@@ -1,5 +1,5 @@
 n = int(input())
-A = list(map(int,input().split()))
+A = list(map(int, input().split()))
 
 B = 0
 for a in A:
@@ -7,6 +7,6 @@ for a in A:
 
 ans = []
 for a in A:
-    ans.append(B^a)
+    ans.append(B ^ a)
 
 print(*ans)

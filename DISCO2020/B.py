@@ -8,6 +8,6 @@ res = 999999999999999999999999
 for i in range(N):
     c += A[i]
     d -= A[i]
-    res = min(res, abs(c-d))
+    res = min(res, abs(c - d))
 
 print(res)

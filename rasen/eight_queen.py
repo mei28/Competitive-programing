@@ -38,11 +38,7 @@ def recursive(i: int) -> None:
         return
 
     for j in range(N):
-        if (
-            cols[j] == NOT_FREE
-            or dpos[i + j] == NOT_FREE
-            or dneg[i + j] == NOT_FREE
-        ):
+        if cols[j] == NOT_FREE or dpos[i + j] == NOT_FREE or dneg[i + j] == NOT_FREE:
             continue
         rows[i] = j
         cols[j] = dpos[i + j] = dneg[i - j + N - 1] = NOT_FREE

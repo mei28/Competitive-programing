@@ -64,10 +64,10 @@ goal = []
 for i in range(n):
     ix, iy, ir = points[i]
 
-    if (sx - ix) ** 2 + (sy - iy) ** 2 == ir ** 2:
+    if (sx - ix) ** 2 + (sy - iy) ** 2 == ir**2:
         start.append(i)
 
-    if (tx - ix) ** 2 + (ty - iy) ** 2 == ir ** 2:
+    if (tx - ix) ** 2 + (ty - iy) ** 2 == ir**2:
         goal.append(i)
 
 for x in start:

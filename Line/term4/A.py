@@ -84,22 +84,22 @@ def dfs(x, y, visited, dct, dice_list):
 
     visited[y][x] = True
     dice = Dice(dice_list)
-    dfs(x+1, y, visited, dct, dice.right())
+    dfs(x + 1, y, visited, dct, dice.right())
     dice = Dice(dice_list)
-    dfs(x-1, y, visited, dct, dice.left())
+    dfs(x - 1, y, visited, dct, dice.left())
     dice = Dice(dice_list)
-    dfs(x, y+1, visited, dct, dice.down())
+    dfs(x, y + 1, visited, dct, dice.down())
     dice = Dice(dice_list)
-    dfs(x, y-1, visited, dct, dice.up())
+    dfs(x, y - 1, visited, dct, dice.up())
 
 
 dfs(0, 0, visited, dct, dice.surface)
 
 if visited[N - 1][M - 1]:
-    print('YES')
+    print("YES")
     if N == 1 or M == 1:
-        print(N*M-1)
+        print(N * M - 1)
     else:
-        print(N*M//2)
+        print(N * M // 2)
 else:
-    print('NO')
+    print("NO")

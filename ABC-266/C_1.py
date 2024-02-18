@@ -4,6 +4,8 @@ Cx, Cy = map(int, input().split())
 Dx, Dy = map(int, input().split())
 
 G = [(Ax, Ay), (Bx, By), (Cx, Cy), (Dx, Dy)]
+
+
 # cross product: (b - a)×(c - a)
 def cross3(a, b, c):
     return (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])

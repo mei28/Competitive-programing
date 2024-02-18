@@ -6,8 +6,8 @@ money = 1000
 kabu_c = 0
 # 予言で翌日上がるかどうかのリスト
 l = list()
-for i in range(n-1):
-    if A[i+1] - A[i] > 0:
+for i in range(n - 1):
+    if A[i + 1] - A[i] > 0:
         l.append(1)
     else:
         l.append(0)
@@ -22,5 +22,5 @@ for idx, i in enumerate(l):
         kabu_c = 0
 # 上がり調子だと最終日で売り切ってない可能性があるので所持している株は最終日で売り切る
 if kabu_c > 0:
-    money = money + (kabu_c * A[n-1])
+    money = money + (kabu_c * A[n - 1])
 print(money)

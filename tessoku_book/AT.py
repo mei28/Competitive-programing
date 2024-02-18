@@ -54,10 +54,7 @@ tic()
 while toc() < 800:
     candidate = nxt(sol)
     candidate_score = score(candidate)
-    if (
-        candidate_score < sol_score
-        or randint(0, 1000000000) < (900 - int(toc())) ** 2
-    ):
+    if candidate_score < sol_score or randint(0, 1000000000) < (900 - int(toc())) ** 2:
         sol = candidate
         sol_score = candidate_score
         if sol_score < best_score:

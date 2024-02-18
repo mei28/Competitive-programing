@@ -16,11 +16,11 @@ def main(lines):
     # cut
     line = line[1:-1]
     # calc mean
-    print(sum(line)/len(line))
+    print(sum(line) / len(line))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     lines = []
     for l in sys.stdin:
-        lines.append(l.rstrip('\r\n'))
+        lines.append(l.rstrip("\r\n"))
     main(lines)

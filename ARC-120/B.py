@@ -22,12 +22,12 @@ for _h in range(h):
 
 result = 1
 
-for d in range(h+w-1):
+for d in range(h + w - 1):
     if color_by_dist[d] == 3:
         print(0)
         exit()
 
-    elif color_by_dist[d]==0:
+    elif color_by_dist[d] == 0:
         result *= 2
         result %= MOD
 

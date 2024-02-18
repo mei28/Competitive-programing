@@ -2,7 +2,7 @@
 
 from collections import deque
 
-inf = 10 ** 9
+inf = 10**9
 dij = [(0, 1), (-1, 0), (0, -1), (1, 0)]
 int1 = lambda x: int(x) - 1  # 1-indexedを0-indexedに直す関数
 

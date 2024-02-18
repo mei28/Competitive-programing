@@ -4,7 +4,7 @@ dict_ = {}
 
 for i in w:
     dict_.setdefault(i, 0)
-    dict_[i] +=1
+    dict_[i] += 1
 
 flg = True
 

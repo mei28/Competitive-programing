@@ -7,4 +7,4 @@ for a in A:
     if a == X:
         continue
     else:
-        print(a, end=' ')
+        print(a, end=" ")

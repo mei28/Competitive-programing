@@ -24,9 +24,9 @@ primes = get_primes(q_max)
 ans = 0
 
 for i in range(len(primes)):
-    t = primes[i] **3
+    t = primes[i] ** 3
     for j in range(i):
-        if t*primes[j]>n:
+        if t * primes[j] > n:
             break
         ans += 1
 

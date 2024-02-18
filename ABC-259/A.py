@@ -13,6 +13,6 @@ for i in range(1, m + 2):
     if i <= x:
         hight[i] = hight[i - 1] + d
     else:
-        hight[i] = hight[i-1]
+        hight[i] = hight[i - 1]
 
 print(hight[m])

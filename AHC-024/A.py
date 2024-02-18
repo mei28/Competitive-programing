@@ -51,7 +51,7 @@ def spiral_order(matrix):
 if __name__ == "__main__":
     n, m = map(int, input().split())
     C = [list(map(int, input().split())) for _ in range(n)]
-    
+
     for i in range(2):
         spiral_order(C)
 

@@ -7,6 +7,6 @@ while True:
     if now == -1:
         break
     now = P[now]
-    cnt +=1
+    cnt += 1
 
 print(cnt)

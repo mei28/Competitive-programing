@@ -1,8 +1,8 @@
-x, y = map(int,input().split())
+x, y = map(int, input().split())
 
-if x>=y:
+if x >= y:
     print(0)
     exit()
 
 y -= x
-print(-(-y//10))
+print(-(-y // 10))

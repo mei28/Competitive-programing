@@ -22,7 +22,7 @@ def ok(x):
     return False
 
 
-bottom, top = 1, 10 ** 10
+bottom, top = 1, 10**10
 
 while top - bottom > 1:
     mid = (top + bottom) // 2

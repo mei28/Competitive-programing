@@ -48,7 +48,6 @@ def query2(px: int, py: int, qx: int, qy: int):
 
 
 if __name__ == "__main__":
-
     H, W = map(int, input().split())
     Q = int(input())
     Qs = [list(map(int, input().split())) for _ in range(Q)]

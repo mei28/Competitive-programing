@@ -16,6 +16,6 @@ for i in range(n):
     for j in range(n):
         if i >= j:
             continue
-        l += math.sqrt((X[i]-X[j])**2 + (Y[i]-Y[j])**2)
+        l += math.sqrt((X[i] - X[j]) ** 2 + (Y[i] - Y[j]) ** 2)
 
-print(l*2/n)
+print(l * 2 / n)

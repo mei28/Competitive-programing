@@ -10,7 +10,6 @@ for i in range(n):
     B[a + 2] -= 1
 
 for i in range(1, len(B)):
-
     B[i] += B[i - 1]
 
 print(max(B))

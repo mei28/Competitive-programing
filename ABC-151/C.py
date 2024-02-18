@@ -12,9 +12,9 @@ for i in range(m):
     result = submit[i][1]
     question = int(submit[i][0])
 
-    if result == 'AC' and ac[question] == 0:
+    if result == "AC" and ac[question] == 0:
         ac[question] = 1
-    elif result == 'WA' and ac[question] == 0:
+    elif result == "WA" and ac[question] == 0:
         wa[question] += 1
 
 for i in range(n + 1):

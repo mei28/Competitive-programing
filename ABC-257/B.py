@@ -18,4 +18,3 @@ for l in L:
 
 
 print(*ans_idx[1:])
-

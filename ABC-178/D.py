@@ -1,7 +1,7 @@
 S = int(input())
 
 ans = 0
-MOD = 10 ** 9 + 7
+MOD = 10**9 + 7
 fact = [0] * 4400
 invfact = [0] * 4400
 fact[0] = 1

@@ -12,13 +12,13 @@ if X >= K * D:
 
 for i in range(K):
     if now >= D:
-        k = now//D
+        k = now // D
     else:
-        k=1
+        k = 1
     left -= k
     prev = now
-    next_p = now + k*D
-    next_m = now - k*D
+    next_p = now + k * D
+    next_m = now - k * D
     if abs(next_p) > abs(next_m):
         now = next_m
     else:

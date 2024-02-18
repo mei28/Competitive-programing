@@ -21,7 +21,6 @@ for y in range(1, MAX):
         T[y][x] += T[y - 1][x]
 
 
-
 cnt = 0
 for h in range(MAX):
     for w in range(MAX):

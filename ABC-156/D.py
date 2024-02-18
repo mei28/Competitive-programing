@@ -30,5 +30,5 @@ def make_tables(n: int, mod: int) -> tuple:
 
 fac, ifac = make_tables(n, MOD)
 
-ans = 2 ** n - cmb(n, a, fac, ifac, MOD) - cmb(n, b, fac, ifac, MOD) - 1
+ans = 2**n - cmb(n, a, fac, ifac, MOD) - cmb(n, b, fac, ifac, MOD) - 1
 print(ans % MOD)

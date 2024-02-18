@@ -11,5 +11,5 @@ import math
 
 PI = math.pi
 
-ans = (_max ** 2 - _min ** 2) * PI
+ans = (_max**2 - _min**2) * PI
 print(ans)

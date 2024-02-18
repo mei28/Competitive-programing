@@ -23,14 +23,4 @@ for i in range(1, 10):
 
 can = candidate[n - 1]
 
-print(
-    can[0]
-    + can[0]
-    + can[1]
-    + can[2]
-    + can[3]
-    + can[3]
-    + can[4]
-    + can[5]
-    + can[4]
-)
+print(can[0] + can[0] + can[1] + can[2] + can[3] + can[3] + can[4] + can[5] + can[4])

@@ -5,6 +5,7 @@ A.sort()
 MOD = 998244353
 ans = 0
 
+
 # dp[i][j][k]: iまでみてjこえらんだとき
 def solve(M):
     dp = [[0] * (n + 1) for _ in range(n + 1)]
@@ -20,4 +21,4 @@ def solve(M):
 for cnt in range(1, n + 1):
     ans += solve(cnt)
 
-print(ans)    
+print(ans)

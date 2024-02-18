@@ -7,4 +7,3 @@ elif m + 1 < M:
     print(y, m + 1, 1)
 else:
     print(y + 1, 1, 1)
-

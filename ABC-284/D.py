@@ -7,7 +7,6 @@ from os import wait
 # 素因数分解を行う関数
 @lru_cache(maxsize=None)
 def prime_factorization(n):
-
     # 素数で割り切れるかの判定
     for p in range(2, int(n**0.5)):
         if n % p == 0:

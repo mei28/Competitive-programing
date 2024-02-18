@@ -7,7 +7,7 @@ from leven import levenshtein
 
 
 def isAlNum(s: str) -> bool:
-    pat = re.compile(r'^[A-Za-z0-9]+$')
+    pat = re.compile(r"^[A-Za-z0-9]+$")
     return pat.match(s) is not None
 
 
@@ -28,12 +28,12 @@ def main(lines):
     lines = lines[0].split()
     # 2つ入力あるか?
     if len(lines) == 0:
-        s = 'a'
-        t = 'a'
+        s = "a"
+        t = "a"
     elif len(lines) == 1:
         s = lines[0]
         # sの先頭とは違う文字にする
-        t = chr((ord(s[0])+1) % 25 + 48)
+        t = chr((ord(s[0]) + 1) % 25 + 48)
     elif len(lines) == 2:
         s = lines[0]
         t = lines[1]
@@ -48,10 +48,10 @@ def main(lines):
         sys.exit(100)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     lines = []
     for l in sys.stdin:
-        lines.append(l.rstrip('\r\n'))
+        lines.append(l.rstrip("\r\n"))
     main(lines)
 
 # def main(lines):

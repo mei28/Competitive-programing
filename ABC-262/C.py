@@ -10,10 +10,9 @@ for i in range(0, n):
         itti[i + 1] += 1
 
 
-
 for i, a in enumerate(A):
     if a != i + 1:
-        if A[a - 1] == i + 1 and i<a:
+        if A[a - 1] == i + 1 and i < a:
             ans += 1
     else:
         ans += itti[n] - itti[i + 1]

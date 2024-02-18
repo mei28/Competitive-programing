@@ -5,4 +5,3 @@ for i in range(n):
     if P[i] + h >= x:
         print(i + 1)
         exit()
-

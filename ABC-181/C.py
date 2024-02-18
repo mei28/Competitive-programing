@@ -15,7 +15,7 @@ for i in range(0, N):
             dx2 = X[j] - X[i]
             dy2 = Y[j] - Y[i]
             if dx1 * dy2 == dx2 * dy1:
-                print('Yes')
+                print("Yes")
                 exit()
 
-print('No')
+print("No")

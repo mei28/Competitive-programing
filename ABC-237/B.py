@@ -1,5 +1,5 @@
-h,w = map(int,input().split())
-A = [list(map(int,input().split())) for _ in range(h)]
+h, w = map(int, input().split())
+A = [list(map(int, input().split())) for _ in range(h)]
 
 ans = []
 for i in range(w):
@@ -10,5 +10,3 @@ for i in range(w):
 
 for i in ans:
     print(*i)
-        
-

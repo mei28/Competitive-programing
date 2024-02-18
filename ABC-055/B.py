@@ -1,6 +1,6 @@
 N = int(input())
 
-MOD = 10 ** 9 + 7
+MOD = 10**9 + 7
 
 ans = 1
 

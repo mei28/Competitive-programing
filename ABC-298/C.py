@@ -24,9 +24,7 @@ class BIT:
                 res2.append(f"[{l}, {r}]:{self.d[r]}")
             res.append(" ".join(res2))
             p >>= 1
-        res.append(
-            f"{[self.sum(p + 1) - self.sum(p) for p in range(self.size)]}"
-        )
+        res.append(f"{[self.sum(p + 1) - self.sum(p) for p in range(self.size)]}")
         return "\n".join(res)
 
     def add(self, p, x):  # O(log(n)), 点pにxを加算
@@ -69,9 +67,7 @@ class MultiSet:
     def __init__(self, n=0, *, compress=[], multi=True):
         self.multi = multi
         self.inv_compress = (
-            sorted(set(compress))
-            if len(compress) > 0
-            else [i for i in range(n)]
+            sorted(set(compress)) if len(compress) > 0 else [i for i in range(n)]
         )
         self.compress = {k: v for v, k in enumerate(self.inv_compress)}
         self.counter_all = 0

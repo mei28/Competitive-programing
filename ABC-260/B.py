@@ -2,7 +2,7 @@ n, x, y, z = map(int, input().split())
 A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
-C = [(a, b, -i-1, a + b) for i, (a, b) in enumerate(zip(A, B))]
+C = [(a, b, -i - 1, a + b) for i, (a, b) in enumerate(zip(A, B))]
 
 C = list(sorted(C, key=lambda x: (x[0], x[2]), reverse=True))
 
@@ -29,5 +29,3 @@ ans.sort(reverse=True)
 
 for a in ans:
     print(abs(a))
-
-

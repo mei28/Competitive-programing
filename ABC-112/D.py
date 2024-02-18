@@ -3,7 +3,7 @@ n, m = map(int, input().split())
 
 def calc_divisor(n: int) -> list:
     ans: list = [1]
-    for i in range(1, int(n ** 0.5) + 1):
+    for i in range(1, int(n**0.5) + 1):
         if n % i == 0:
             ans.append(i)
             j = n // i

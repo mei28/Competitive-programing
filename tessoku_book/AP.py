@@ -20,8 +20,6 @@ ans = 0
 K += 1
 for i in range(101):
     for j in range(101):
-        ans = max(
-            ans, cnt[i + K][j + K] + cnt[i][j] - cnt[i][j + K] - cnt[i + K][j]
-        )
+        ans = max(ans, cnt[i + K][j + K] + cnt[i][j] - cnt[i][j + K] - cnt[i + K][j])
 
 print(ans)

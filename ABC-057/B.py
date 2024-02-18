@@ -19,8 +19,8 @@ for i in range(N):
     for j in range(M):
         c, d = C[j], D[j]
 
-        diff = abs(a - c)+abs(b - d)
+        diff = abs(a - c) + abs(b - d)
         if diff < min_diff:
             min_diff = diff
-            ans = j+1
+            ans = j + 1
     print(ans)

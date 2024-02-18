@@ -1,5 +1,6 @@
 N = int(input())
 
+
 # get prime numbers
 def eratos(N):
     prime = [True] * (N + 1)

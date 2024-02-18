@@ -7,8 +7,6 @@ for i in set(s):
     for j in s.split(i):
         cnt = max(cnt, len(j))
 
-    ans = min(cnt,ans)
+    ans = min(cnt, ans)
 
 print(ans)
-
-

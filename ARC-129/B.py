@@ -1,4 +1,4 @@
-import math 
+import math
 
 n = int(input())
 
@@ -13,5 +13,5 @@ for i in range(n):
     if max_L <= min_R:
         print(0)
     else:
-        tmp = math.ceil(abs(max_L-min_R)/2)
+        tmp = math.ceil(abs(max_L - min_R) / 2)
         print(tmp)

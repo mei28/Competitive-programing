@@ -4,7 +4,7 @@ S = input()
 max_cnt = 0
 now_cnt = 0
 for i in S:
-    if i == 'I':
+    if i == "I":
         now_cnt += 1
     else:
         now_cnt -= 1

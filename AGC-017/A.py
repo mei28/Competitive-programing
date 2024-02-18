@@ -10,7 +10,7 @@ for a in A:
     else:
         odd += 1
 
-even_cnt = 2 ** even
+even_cnt = 2**even
 if odd == 0:
     if P == 0:
         odd_cnt = 1

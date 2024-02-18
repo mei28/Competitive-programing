@@ -1,5 +1,5 @@
 def is_ok(q, m):
-    if 2 ** m > q:
+    if 2**m > q:
         return True
     else:
         return False
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     b_max = binary_search(N)
     min_abc = 1 << 60
     for b in range(b_max):
-        a = N // (2 ** b)
-        c = N - 2 ** b * a
+        a = N // (2**b)
+        c = N - 2**b * a
         min_abc = min(min_abc, a + b + c)
     print(min_abc)

@@ -9,7 +9,5 @@ for ele in A:
 ans = l * n
 for left in range(n + 1):
     for right in range(l, n + 1):
-        tmp = (
-            left * l + (n - right) * r + (accumulate[right] - accumulate[left])
-        )
+        tmp = left * l + (n - right) * r + (accumulate[right] - accumulate[left])
         ans = min(ans, tmp)

@@ -8,30 +8,32 @@ for _ in range(m):
 
 p = [-1] * (n)
 
-def root(x:int)->int:
-    if p[x]<0:
+
+def root(x: int) -> int:
+    if p[x] < 0:
         return x
     p[x] = root(p[x])
     return p[x]
 
-def merge(x:int,y:int):
+
+def merge(x: int, y: int):
     x = root(x)
     y = root(y)
-    if x==y:
-        return 
-    if x>y:
-        x,y = y,x
+    if x == y:
+        return
+    if x > y:
+        x, y = y, x
     p[x] += p[y]
     p[y] = x
 
 
 for a in range(n):
     for b in G[a]:
-        merge(a,b)
+        merge(a, b)
 ans = 0
 
 for i in range(n):
-    if i==root(i):
+    if i == root(i):
         ans += 1
 
-print(ans-1)
+print(ans - 1)

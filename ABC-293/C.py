@@ -5,6 +5,7 @@ A = [list(map(int, input().split())) for _ in range(h)]
 
 P = [1] * (h - 1) + [0] * (w - 1)
 
+
 # 0 -> 右 1->した
 def check(l):
     x, y = 0, 0

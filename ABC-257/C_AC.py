@@ -13,7 +13,7 @@ A = list(sorted(A, key=lambda x: x[0]))
 
 x = ans
 for i in range(n):
-    if A[i][1] == '1':
+    if A[i][1] == "1":
         x -= 1
     else:
         x += 1

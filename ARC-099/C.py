@@ -1,4 +1,4 @@
-N, K = map(int,input().split())
-A = list(map(int,input().split()))
+N, K = map(int, input().split())
+A = list(map(int, input().split()))
 
-print(int((N+K-3)/(K-1)))
+print(int((N + K - 3) / (K - 1)))

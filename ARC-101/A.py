@@ -1,7 +1,7 @@
 n, k = map(int, input().split())
 X = list(map(int, input().split()))
 
-res = 10 ** 10
+res = 10**10
 
 for left in range(n - k + 1):
     right = left + k - 1

@@ -7,7 +7,7 @@ for i in range(1, N):
     back = A[i]
 
     if front > back:
-        diff = front-back 
+        diff = front - back
         cnt += diff
         A[i] = A[i] + diff
 

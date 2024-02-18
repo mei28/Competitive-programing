@@ -1,6 +1,6 @@
 S = input()
 
-cnt = S.count('R')
+cnt = S.count("R")
 if cnt == 1:
     print(cnt)
 elif cnt == 0:

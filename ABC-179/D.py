@@ -11,11 +11,12 @@ for i in LR:
     for j in range(l, r + 1):
         S.add(j)
 
-diff = n-1
+diff = n - 1
 
 ans = 0
 
 MOD = 998244353
+
 
 def dfs(A):
     if sum(A) == diff:
@@ -25,7 +26,7 @@ def dfs(A):
     res = 0
     for v in list(S):
         A.append(v)
-        res = max(dfs(A)+res, dfs(A))
+        res = max(dfs(A) + res, dfs(A))
         res %= MOD
         A.pop()
     return res

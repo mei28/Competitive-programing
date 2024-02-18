@@ -35,7 +35,6 @@ def check_in_data(word: str):
 
 
 def get_permutations(n: int) -> list:
-
     _alp = alp
     if args.exclude_word:
         _alp = list(set(alp) - set(args.exclude_word))

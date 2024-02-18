@@ -2,7 +2,7 @@ N, M = map(int, input().strip().split())
 roulettes = [tuple(map(int, input().strip().split())) for _ in range(N)]
 
 # dp[i]はポイントiに達するための最小のコスト
-dp = [float('inf')] * (M + 1)
+dp = [float("inf")] * (M + 1)
 dp[M] = 0
 
 # ポイントMから0まで計算

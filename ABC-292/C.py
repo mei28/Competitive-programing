@@ -2,6 +2,7 @@ n = int(input())
 
 ans = 0
 
+
 # A+B = N
 # A+B = N
 def make_divisors(n):

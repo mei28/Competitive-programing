@@ -1,5 +1,5 @@
 n = int(input())
-ma = 2 * 10 ** 5 + 10
+ma = 2 * 10**5 + 10
 imo = [0] * ma
 
 for _ in range(n):

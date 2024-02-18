@@ -6,7 +6,6 @@ cnt_A = 0
 cnt_B = 0
 
 for a, b in zip(A, B):
-
     if a > b:
         cnt_A += a - b
     elif b > a:

@@ -9,4 +9,4 @@ if len(cnter.keys()) == 2:
         print("Yes")
         exit()
 
-print('No')
+print("No")

@@ -1,4 +1,5 @@
 import math
+
 r1, c1 = map(int, input().split())
 r2, c2 = map(int, input().split())
 
@@ -7,52 +8,52 @@ def can_move(a, b):
     ans = set()
     t = 1000000
     for i in range(t):
-        ans.add((a+i, b+i))
-        ans.add((a+i, b-i))
-        ans.add((a-i, b+i))
-        ans.add((a-i, b-i))
-    ans.add((a+0, b-3))
+        ans.add((a + i, b + i))
+        ans.add((a + i, b - i))
+        ans.add((a - i, b + i))
+        ans.add((a - i, b - i))
+    ans.add((a + 0, b - 3))
 
-    ans.add((a-2, b-2))
-    ans.add((a-1, b-2))
-    ans.add((a, b-2))
-    ans.add((a+2, b-2))
-    ans.add((a+1, b-2))
+    ans.add((a - 2, b - 2))
+    ans.add((a - 1, b - 2))
+    ans.add((a, b - 2))
+    ans.add((a + 2, b - 2))
+    ans.add((a + 1, b - 2))
 
-    ans.add((a-2, b-1))
-    ans.add((a-1, b-1))
-    ans.add((a, b-1))
-    ans.add((a+2, b-1))
-    ans.add((a+1, b-1))
+    ans.add((a - 2, b - 1))
+    ans.add((a - 1, b - 1))
+    ans.add((a, b - 1))
+    ans.add((a + 2, b - 1))
+    ans.add((a + 1, b - 1))
 
-    ans.add((a-3, b))
-    ans.add((a-2, b))
-    ans.add((a-1, b))
+    ans.add((a - 3, b))
+    ans.add((a - 2, b))
+    ans.add((a - 1, b))
     ans.add((a, b))
-    ans.add((a+2, b))
-    ans.add((a+1, b))
-    ans.add((a+3, b))
+    ans.add((a + 2, b))
+    ans.add((a + 1, b))
+    ans.add((a + 3, b))
 
-    ans.add((a-2, b+1))
-    ans.add((a-1, b+1))
-    ans.add((a, b+1))
-    ans.add((a+2, b+1))
-    ans.add((a+1, b+1))
+    ans.add((a - 2, b + 1))
+    ans.add((a - 1, b + 1))
+    ans.add((a, b + 1))
+    ans.add((a + 2, b + 1))
+    ans.add((a + 1, b + 1))
 
-    ans.add((a-2, b+2))
-    ans.add((a-1, b+2))
-    ans.add((a, b+2))
-    ans.add((a+2, b+2))
-    ans.add((a+1, b+2))
+    ans.add((a - 2, b + 2))
+    ans.add((a - 1, b + 2))
+    ans.add((a, b + 2))
+    ans.add((a + 2, b + 2))
+    ans.add((a + 1, b + 2))
 
-    ans.add((a, b+3))
+    ans.add((a, b + 3))
 
     ans = list(ans)
     return ans
 
 
 def dist(S, G):
-    return math.sqrt((S[0]-G[0])**2 + (S[1]-G[1])**2)
+    return math.sqrt((S[0] - G[0]) ** 2 + (S[1] - G[1]) ** 2)
 
 
 def min_dist(S: set, cm: list):

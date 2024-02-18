@@ -8,7 +8,6 @@ class Point:
 
 
 if __name__ == "__main__":
-
     N, Q = map(int, input().split())
     P: List[Point] = []
     for i in range(N):

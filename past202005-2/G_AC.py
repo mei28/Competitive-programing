@@ -50,6 +50,8 @@ def bfs():
 
 
 n, gx, gy = map(int, input().split())
-grid = defaultdict(lambda: ".")  # construct_maze関数内で宣言すると、bfs関数内で使えません
+grid = defaultdict(
+    lambda: "."
+)  # construct_maze関数内で宣言すると、bfs関数内で使えません
 construct_maze()
 print(bfs())
