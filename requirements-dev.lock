@@ -8,3 +8,11 @@
 #   with-sources: false
 
 -e file:.
+lightgbm==4.3.0
+    # via competitive-programing
+numpy==1.26.4
+    # via competitive-programing
+    # via lightgbm
+    # via scipy
+scipy==1.12.0
+    # via lightgbm
