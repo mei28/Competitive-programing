@@ -1,21 +1,21 @@
 #!/bin/bash
 
 function oj_d() {
-    # set -euC
-    
+    # set -euC  # コメントアウトされている set コマンドを元に戻すこともできます
+
     function show_help() {
         echo -e "usage: oj_d <contest_id> <problem_id>"
         echo -e "contest_id:\t(ex. abc297)"
         echo -e "problem_id:\t(ex. c)"
     }
 
-    if [[ $# == 0 ]]; then
+    if [[ $# -eq 0 ]]; then
         show_help
         return 1
     fi
 
     if [[ "${1}" == "https://"* ]]; then
-        if [[ $# != 1 ]]; then
+        if [[ $# -ne 1 ]]; then
             show_help
             return 1
         fi
@@ -24,15 +24,16 @@ function oj_d() {
         fi
         url="${1}"
     else
-        if [[ $# != 2 ]]; then
+        if [[ $# -ne 2 ]]; then
             show_help
             return 1
         fi
         if [[ -d ./test ]]; then
             rm -r ./test
         fi
-        url=$(acc url "${1}" "${1}_${2}")
+        url="https://atcoder.jp/contests/${1}/tasks/${1}_${2}"
     fi
 
     oj d "${url}"
 }
+
