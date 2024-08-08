@@ -3,7 +3,7 @@
 function oj_s() {
     # set -euC
     function show_help() {
-        echo -e "usage: oj_d <contest_id> <problem_id>"
+        echo -e "usage: oj_s <contest_id> <problem_id>"
         echo -e "contest_id:\t(ex. abc297)"
         echo -e "problem_id:\t(ex. c)"
     }
