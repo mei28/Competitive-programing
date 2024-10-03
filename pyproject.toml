@@ -6,9 +6,10 @@ authors = [
     { name = "mei", email = "mei28aquarius@gmail.com" }
 ]
 dependencies = [
-    "numpy>=1.26.4",
+    "numpy>=2.1.1",
     "lightgbm>=4.3.0",
     "online-judge-tools>=11.5.1",
+    "sympy>=1.13.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"

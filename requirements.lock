@@ -33,7 +33,9 @@ lightgbm==4.3.0
     # via competitive-programing
 lxml==5.2.2
     # via online-judge-api-client
-numpy==1.26.4
+mpmath==1.3.0
+    # via sympy
+numpy==2.1.1
     # via competitive-programing
     # via lightgbm
     # via scipy
@@ -50,10 +52,12 @@ requests==2.32.3
 rpds-py==0.20.0
     # via jsonschema
     # via referencing
-scipy==1.12.0
+scipy==1.14.1
     # via lightgbm
 soupsieve==2.5
     # via beautifulsoup4
+sympy==1.13.3
+    # via competitive-programing
 toml==0.10.2
     # via online-judge-api-client
 urllib3==2.2.2
